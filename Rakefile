@@ -100,14 +100,12 @@ task :fetch_repo do
     puts "clone #{url}.git from github"
     cd '../' do
       system "git clone #{url}.git #{local_repo}"
-      system "git checkout gh-pages"
     end
   else
     cd "../#{local_repo}/" do
       puts "update #{url}"
       system "git reset --hard HEAD"
       system "git pull origin gh-pages"
-      system "git checkout gh-pages"
     end
   end
 end
@@ -118,6 +116,13 @@ task :build do
   puts "Build jekyll site to #{dest}"
   system "gulp compressed"
   system "bundle exec jekyll build -d #{dest} --config _config.yml"
+end
+
+desc "checkout gh-pages"
+task :checkout do
+  cd "../#{local_repo}/" do
+    system "git checkout gh-pages"
+  end
 end
 
 desc "push repo to github"
@@ -138,6 +143,7 @@ task :deploy do
   repo = ENV["repo"] || remote_repo
 
   system "rake fetch_repo repo=#{repo}"
+  system "rake checkout"
   system "rake build dest=../#{local_repo}"
   system "rake push"
   puts "has already deployed"
