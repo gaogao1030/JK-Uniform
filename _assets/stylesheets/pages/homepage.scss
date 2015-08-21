@@ -1,0 +1,75 @@
+@import "compass";
+.home-page-cover {
+  width: 100%;
+  z-index:1;
+  position: relative;
+  margin-bottom: 20px;
+  height:410px;
+  background-color: #000;
+  &:after {
+    background-image: url("http://7xl9ad.com1.z0.glb.clouddn.com/page-classroom.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .6;
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index: -1;
+    content: "";
+    top:0;
+    left:0;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  width: 100%;
+  z-index:1;
+  position: relative;
+  margin-bottom: 20px;
+  height:410px;
+  .home-page-cover {
+    background-image: url("http://7xl9ad.com1.z0.glb.clouddn.com/page-classroom.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index: -1;
+    content: "";
+    top:0;
+    left:0;
+    margin-bottom: 20px;
+  }
+}
+
+img.avatar {
+  width: 110px;
+  height: 110px;
+  @include border-radius(300px);
+  margin-top: 40%;
+}
+
+.group-intro {
+  width: 300px;
+  height: 100%;
+  position:relative;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.centrality {
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin: auto;
+}
+
+.caption {
+  margin-top: 20px;
+  color: #fff;
+}

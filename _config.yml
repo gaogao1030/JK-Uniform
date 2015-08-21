@@ -4,7 +4,7 @@ collections:
     permalink: /:collection/:path/
 #
 # Site settings
-title: gaogao
+title: JKたちの日常
 email: gaogao1130@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   変態じゃないよ、仮に変態だとしても変態という名の紳士だよ！
