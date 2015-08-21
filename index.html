@@ -13,7 +13,7 @@ layout: default
         </h2>
         <span class="post-meta">{{ post.date | date: "%Y年%-m月%-d日" }}{{ post.categories | category_links }}</span>
         <div class="post-content">
-          {{post.content |strip_html |truncatewords: 2}}
+          {{post.content |strip_html |truncatewords: 3}}
         </div>
 
       </li>

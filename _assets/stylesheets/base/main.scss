@@ -82,9 +82,14 @@ $on-laptop:        800px;
 }
 
 .post-main {
-  margin:0 auto;
+  margin:50px auto;
   &.col-md-8 {
     float:none;
+  }
+  img {
+    margin:0 auto;
+    max-width:100%;
+    display: block;
   }
 }
 
