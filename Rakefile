@@ -100,12 +100,14 @@ task :fetch_repo do
     puts "clone #{url}.git from github"
     cd '../' do
       system "git clone #{url}.git #{local_repo}"
+      system "git checkout gh-pages"
     end
   else
     cd "../#{local_repo}/" do
       puts "update #{url}"
       system "git reset --hard HEAD"
       system "git pull origin gh-pages"
+      system "git checkout gh-pages"
     end
   end
 end
