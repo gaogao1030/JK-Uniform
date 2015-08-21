@@ -105,7 +105,7 @@ task :fetch_repo do
     cd "../#{local_repo}/" do
       puts "update #{url}"
       system "git reset --hard HEAD"
-      system "git pull origin master"
+      system "git pull origin gh-pages"
     end
   end
 end
@@ -123,11 +123,11 @@ task :push do
   cd "../#{local_repo}/" do
     puts "add .nojekyll"
     system "touch .nojekyll"
-    puts "Pushing to `master' branch:"
+    puts "Pushing to `gh-pages' branch:"
     system "git add -A"
     system "git commit -m 'update at #{Time.now.utc}'"
-    system "git push origin master"
-    puts "`master' branch updated."
+    system "git push origin gh-pages"
+    puts "`gh-pages' branch updated."
   end
 end
 

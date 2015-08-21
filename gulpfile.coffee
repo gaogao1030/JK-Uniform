@@ -7,10 +7,6 @@ gutil = require 'gulp-util'
 rename = require 'gulp-rename'
 compass = require 'gulp-compass'
 minifycss = require 'gulp-minify-css'
-sass = require 'gulp-sass'
-fs = require 'fs'
-path = require 'path'
-_ = require 'underscore'
 
 
 js_dest = "javascript"
