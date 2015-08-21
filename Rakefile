@@ -115,7 +115,7 @@ task :build do
   dest = ENV["dest"] || local_repo
   puts "Build jekyll site to #{dest}"
   system "gulp compressed"
-  system "bundle exec jekyll build -d #{dest} --config _config.yml"
+  system "bundle exec jekyll build -d #{dest} --config _config.yml,_production.yml"
 end
 
 desc "checkout gh-pages"
