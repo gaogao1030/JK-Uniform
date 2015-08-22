@@ -13,7 +13,12 @@ layout: default
         </h2>
         <span class="post-meta">{{ post.date | date: "%Y年%-m月%-d日" }}{{ post.categories | category_links }}</span>
         <div class="post-content">
-          {{post.content |strip_html |truncatewords: 3}}
+          {% if post.truncate_words %}
+            {% assign truncate_words = post.truncate_words %}
+          {% else %}
+            {% assign truncate_words = 3 %}
+          {% endif%}
+          {{post.content |strip_html |truncatewords: truncate_words }}
         </div>
 
       </li>
