@@ -13,7 +13,11 @@ layout: default_post
     </h1>
     <p class="post-meta">{{ page.date | date: "%Y年%-m月%-d日" }}{{ page.categories | category_links }}</p>
   </header>
-  <div class="post-content">
+  {% if page.text-center %}
+    <div class="post-content" style="text-align:center">
+  {% else %}
+    <div class="post-content">
+  {% endif %}
     {{ content }}
   </div>
 </article>
