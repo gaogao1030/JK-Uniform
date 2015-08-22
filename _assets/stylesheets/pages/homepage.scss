@@ -6,6 +6,7 @@
   margin-bottom: 20px;
   height:410px;
   background-color: #000;
+  @include box-shadow(rgba(0,0,0,.5) 0 2px 1px 0,rgba(0,0,0,0.5) 0 1px 0 0);
   &:after {
     background-image: url("http://7xl9ad.com1.z0.glb.clouddn.com/page-classroom.jpg");
     background-position: center;
@@ -30,6 +31,7 @@
   margin-bottom: 20px;
   height:460px;
   .home-page-cover {
+    @include box-shadow(rgba(0,0,0,.5) 0 2px 1px 0,rgba(0,0,0,0.5) 0 1px 0 0);
     background-image: url("http://7xl9ad.com1.z0.glb.clouddn.com/page-classroom.jpg");
     background-position: center;
     background-size: cover;
@@ -47,8 +49,9 @@
 
 img.avatar {
   width: 120px;
-  height: 120px;
-  @include border-radius(300px);
+  height: 140px;
+  @include border-radius(30px);
+  @include box-shadow(rgba(0,0,0,0.8) 0 1px 1px 0);
   margin-top: 40%;
 }
 
