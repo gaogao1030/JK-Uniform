@@ -1,9 +1,8 @@
 ---
+layout: empty
 title: test
-permalink: /:title/
 ---
 
 {% for img in site.data['qiniu']["image"]["test"] %}
-<img src={{img["url"]}}></img>
-
+  <img src={{img["url"]}}></img>
 {% endfor%}

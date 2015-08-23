@@ -2,6 +2,9 @@ collections:
   demos:
     output: true
     permalink: /:collection/:path/
+  photos:
+    output: true
+    permalink: /:collection/:path/
 #
 # Site settings
 title: JKたちの日常
@@ -40,6 +43,12 @@ defaults:
       type: demos
     values:
       layout: demo
+  -
+    scope:
+      path: ""
+      type: photos
+    values:
+      layout: photos
 
 slim:
   pretty: true

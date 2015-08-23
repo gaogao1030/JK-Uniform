@@ -1,0 +1,15 @@
+---
+layout: empty
+---
+{% include header.html %}
+<div class="container">
+  <div class="row">
+    {% for p in site.photos %}
+      {%if p.url != "/photos/list/"%}
+        <a href={{p.url}}>{{p.title}}</a>
+      {%endif%}
+    {%endfor%}
+  </div>
+</div>
+
+{% include footer.html %}
