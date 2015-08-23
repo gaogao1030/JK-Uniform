@@ -31,4 +31,10 @@
   <url>
     <loc>//teaparty/</loc>
   </url>
+  <url>
+    <loc>//photos/list/</loc>
+  </url>
+  <url>
+    <loc>//photos/test/</loc>
+  </url>
 </urlset>
