@@ -5,9 +5,39 @@ require 'irb/completion'
 require "liquid.rb"
 require 'qiniu.rb'
 require 'yaml.rb'
+require 'jekyll'
+require 'fileutils'
+
 local_repo = "jk.gaogao.ninja"
 remote_repo = "JK-Uniform"
 #rake server host="localhost" p="4000"
+
+task :fetch_qiniu do
+  Dir["initializers/*"].each do |filename|
+    require "./"+filename
+  end
+  bucket = ENV["bucket"] || "jk-uniform"
+  path = ENV['path']
+  prefix = ENV['prefix'] || ""
+  host = {
+    "image":"7xl9zk.com1.z0.glb.clouddn.com",
+    "jk-uniform":"7xl9ad.com1.z0.glb.clouddn.com"
+  }
+  #test = YAML::load_file('_data/qiniu/image/test.yml')
+  result = Qiniu.list({:bucket=>bucket,:prefix => prefix})
+  abort "fetch faild because #{bucket} isn't exist" if result[0] != 200
+  items  = result[1]["items"]
+
+  data = items.map{|item| { :url => "http://" + host[bucket.to_sym]+ "/" + item["key"]  } }
+  dir_path = path.split("/")
+  FileUtils::mkdir_p dir_path.slice(0,dir_path.length-1).join("/")
+  File.open(path,"w"){ |f| f.write data.to_yaml.gsub(":url","url") }
+end
+
+desc "take image bucket jpg"
+task :take_image_bucket_jpg do
+  system "rake fetch_qiniu bucket='image' path='_data/qiniu/image/test.yml'"
+end
 
 task :console do |t,args|
   env = ENV['APP_ENV'] || 'development'
