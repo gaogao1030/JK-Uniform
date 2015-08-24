@@ -1,0 +1,23 @@
+@import "compass";
+@import "compass/reset";
+@import "base/variables";
+
+
+.grid-item {
+  width: 300px;
+  float: left;
+  padding: 7px;
+  &.grid-sizer {
+    width: 25%;
+  }
+  @media screen and( max-width: $screen-md-min  ){
+    &.grid-sizer {
+      width: 50%;
+    }
+  }
+  @media screen and( max-width: $screen-xs-min  ){
+    &.grid-sizer {
+      width: 100%;
+    }
+  }
+}

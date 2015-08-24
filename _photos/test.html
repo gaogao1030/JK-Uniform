@@ -1,8 +1,20 @@
 ---
-layout: empty
 title: test
+js:
+  - http://cdn.staticfile.org/masonry/3.1.5/masonry.pkgd.min.js
+  - http://cdn.staticfile.org/imagesloaded/3.0.4/imagesloaded.pkgd.min.js
+  - /javascript/page/photo.js
+
+css:
+  - /stylesheets/pages/photo.css
 ---
 
-{% for img in site.data['qiniu']["image"]["test"] %}
-  <img src={{img["url"]}}></img>
-{% endfor%}
+<ul class = "grid">
+  {% for img in site.data['qiniu']["image"]["test"] %}
+    <li class= "grid-item grid-sizer">
+      <a href="javascript:void(0)">
+      <img src={{img["url"]}}-600></img>
+      </a>
+    </li>
+  {% endfor%}
+</ul>

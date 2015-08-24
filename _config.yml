@@ -54,3 +54,6 @@ slim:
   pretty: true
   format: html5
 
+sass:
+  sass_dir: _assets/stylesheets
+
