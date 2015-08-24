@@ -1,7 +1,9 @@
 ---
 layout: empty
 permalink: /photos/
-jk:
+js:
+  - http://cdn.staticfile.org/masonry/3.1.5/masonry.pkgd.min.js
+  - http://cdn.staticfile.org/imagesloaded/3.0.4/imagesloaded.pkgd.min.js
   - /javascript/page/photo.js
 css:
   - /stylesheets/pages/photo.css
@@ -10,36 +12,31 @@ css:
 <div class="container">
   <div class="row">
     <ul class = "grid jk-cards">
+      {% for i in (1..22) %}
       {% for p in site.photos %}
         {%if p.url != "/photos/list/" and p.url != "/photos/" %}
-           <li class="grid-item grid-sizer jk-card">
-             <img src={{p.cover}}></img>
-             <a href={{p.url}}>{{p.title}}</a>
-             <div class="jk-card-body">
-               {{p.des}}
-             </div>
-           </li>
-           <li class="grid-item grid-sizer jk-card">
-             <img src={{p.cover}}></img>
-             <a href={{p.url}}>{{p.title}}</a>
-             <div class="jk-card-body">
-             </div>
-           </li>
-           <li class="grid-item grid-sizer jk-card">
-             <img src={{p.cover}}></img>
-             <a href={{p.url}}>{{p.title}}</a>
-             <div class="jk-card-body">
-               {{p.des}}
-             </div>
-           </li>
-           <li class="grid-item grid-sizer jk-card">
-             <img src={{p.cover}}></img>
-             <a href={{p.url}}>{{p.title}}</a>
-             <div class="jk-card-body">
-               {{p.des}}
-             </div>
-           </li>
+          <a href={{p.url}}>
+            <li class="grid-item grid-sizer">
+             <div class="jk-card">
+              <img class="list-photo" src={{p.cover}}></img>
+              <div class="jk-card-body">
+                <p class="title">
+                 {{p.title}}
+                </p>
+                <div class="grey">
+                  <p class="intro">
+                   {{p.des}}
+                  </p>
+                  <p class="author">
+                  {{p.author}} <span style="color:#444">摄影</span>
+                  </p>
+                </div>
+              </div>
+              </div>
+             </li>
+           </a>
         {%endif%}
+      {%endfor%}
       {%endfor%}
     </ul>
   </div>
