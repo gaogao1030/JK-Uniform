@@ -9,15 +9,21 @@
   padding: 7px;
   &.grid-sizer {
     width: 25%;
+    &.jk-card {width: 20%}
   }
   @media screen and( max-width: $screen-md-min  ){
     &.grid-sizer {
       width: 50%;
+    &.jk-card {width: 45%}
     }
   }
   @media screen and( max-width: $screen-xs-min  ){
     &.grid-sizer {
       width: 100%;
+    &.jk-card {width: 95%}
     }
   }
+}
+
+.jk-card {
 }

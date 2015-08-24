@@ -1,15 +1,47 @@
 ---
 layout: empty
 permalink: /photos/
+jk:
+  - /javascript/page/photo.js
+css:
+  - /stylesheets/pages/photo.css
 ---
 {% include header.html %}
 <div class="container">
   <div class="row">
-    {% for p in site.photos %}
-      {%if p.url != "/photos/list/"%}
-        <a href={{p.url}}>{{p.title}}</a>
-      {%endif%}
-    {%endfor%}
+    <ul class = "grid jk-cards">
+      {% for p in site.photos %}
+        {%if p.url != "/photos/list/" and p.url != "/photos/" %}
+           <li class="grid-item grid-sizer jk-card">
+             <img src={{p.cover}}></img>
+             <a href={{p.url}}>{{p.title}}</a>
+             <div class="jk-card-body">
+               {{p.des}}
+             </div>
+           </li>
+           <li class="grid-item grid-sizer jk-card">
+             <img src={{p.cover}}></img>
+             <a href={{p.url}}>{{p.title}}</a>
+             <div class="jk-card-body">
+             </div>
+           </li>
+           <li class="grid-item grid-sizer jk-card">
+             <img src={{p.cover}}></img>
+             <a href={{p.url}}>{{p.title}}</a>
+             <div class="jk-card-body">
+               {{p.des}}
+             </div>
+           </li>
+           <li class="grid-item grid-sizer jk-card">
+             <img src={{p.cover}}></img>
+             <a href={{p.url}}>{{p.title}}</a>
+             <div class="jk-card-body">
+               {{p.des}}
+             </div>
+           </li>
+        {%endif%}
+      {%endfor%}
+    </ul>
   </div>
 </div>
 
