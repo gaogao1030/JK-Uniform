@@ -1,6 +1,7 @@
 ---
 layout: empty
 permalink: /photos/
+page_type: photographer_list
 js:
   - http://cdn.staticfile.org/masonry/3.1.5/masonry.pkgd.min.js
   - http://cdn.staticfile.org/imagesloaded/3.0.4/imagesloaded.pkgd.min.js
@@ -14,7 +15,7 @@ css:
     <ul class = "grid jk-cards">
       {% for i in (1..22) %}
       {% for p in site.photos %}
-        {%if p.url != "/photos/list/" and p.url != "/photos/" %}
+        {%if p.page_type != "photographer_list" %}
           <a href={{p.url}}>
             <li class="grid-item grid-sizer">
              <div class="jk-card">
