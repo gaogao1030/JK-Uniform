@@ -2,8 +2,11 @@
 @import "base/variables";
 .portal-cover {
   .portal-cover-title {
-    width: 434px;
+    width: auto;
+    max-width:434px;
+    margin:0 auto;
   }
+  position:relative;
   &.cameraman-cover {
     color: #fff;
     .portal-cover-title {
@@ -22,48 +25,19 @@
   img {
     @include box-shadow(0 1px 3px rgba(0,0,0,.3));
     @include border-radius(12px);
-    height: 700px;
+    height: auto;
+    max-width: 434px;
+    width: 100%;
     margin: 0 auto;
     display: block;
   }
   .portal-cover-title {
     position:absolute;
-    font-size: 26px;
+    font-size: 20px;
     left:0;
     right:0;
-    margin: 320px auto 0 auto;
+    top:50%;
     text-align: center;
     font-weight:bold;
-  }
-}
-@media screen and( max-width: $screen-xs-min  ){
-  .portal-cover {
-    position: relative;
-    .portal-cover-title { margin:0}
-    .portal-cover-title {
-      max-width:434px;
-      width: auto;
-      position:absolute;
-      font-size:20px;
-      left:0;
-      right:0;
-      top: 50%;
-    }
-    .cameraman-cover {
-      color: #fff;
-      .portal-cover-title {
-        background-color: #000; @include opacity(0.8);
-      }
-    }
-    .jk-cover {
-      color: #000;
-      .portal-cover-title {
-        background-color: #fff;
-        @include opacity(0.8);
-      }
-    }
-    img {
-      height: auto;
-    }
   }
 }

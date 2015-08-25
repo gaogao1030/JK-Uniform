@@ -1,4 +1,7 @@
+@import "compass";
+@import "base/variables";
 .navbar-lofter {
+  @include border-radius(0);
   height:82px;
   background-color: #24292c;
   margin-bottom:30px;
@@ -11,6 +14,16 @@
     }
     &:hover {
       text-decoration: none;
+    }
+  }
+}
+@media screen and (max-width: $screen-xs-min) {
+  .navbar-lofter {
+    .home-logo {
+      font-size:26px;
+      .logo {
+        margin-top:22px;
+      }
     }
   }
 }
