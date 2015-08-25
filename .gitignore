@@ -6,3 +6,4 @@ qiniu.yml
 /bower_components
 /javascript
 /stylesheets
+/bower.json
