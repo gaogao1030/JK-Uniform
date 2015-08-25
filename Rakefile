@@ -34,8 +34,8 @@ task :fetch_qiniu do
   File.open(path,"w"){ |f| f.write data.to_yaml.gsub(":url","url") }
 end
 
-desc "take image bucket jpg"
-task :take_image_bucket_jpg do
+desc "fetch_all_image"
+task :fetch_all_image do
   system "rake fetch_qiniu bucket='image' path='_data/qiniu/image/test.yml'"
 end
 
