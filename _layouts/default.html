@@ -4,27 +4,35 @@ css:
   - /stylesheets/components/sidebar.css
 ---
 {% include header.html %}
-<div class="home-page-cover">
-  <div class="group-intro">
-    <img alt="avatar default" class="avatar" src="http://7xl9ad.com1.z0.glb.clouddn.com/page-avatar.jpg"></img>
-    <div class="caption">
-      <h3>JKたちの日常-杭州</h3>
-      <p>群号: 47024789</p>
-      <span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
-      <a class="photo-gallery" href="/photos">私たちの写真馆</a>
+{% if page.post_show != 'true' %}
+  <div class="home-page-cover">
+    <div class="group-intro">
+      <img alt="avatar default" class="avatar" src="http://7xl9ad.com1.z0.glb.clouddn.com/page-avatar.jpg"></img>
+      <div class="caption">
+        <h3>JKたちの日常-杭州</h3>
+        <p>群号: 47024789</p>
+        <span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
+        <a class="photo-gallery" href="/gallery">私たちの日常写真馆</a>
+      </div>
     </div>
   </div>
-</div>
+{% endif %}
 
 <div class="content">
   <div class="container">
     <div class="row">
-      <div class="main col-lg-8 col-md-8 col-sm-12 col-xs-12">
-        {{ content }}
-      </div>
-      <div class="sidebar col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
-        {% include sidebar.html %}
-      </div>
+      {%if page.post_show != 'true'%}
+        <div class="main col-lg-8 col-md-8 col-sm-12 col-xs-12">
+          {{ content }}
+        </div>
+        <div class="sidebar col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+          {% include sidebar.html %}
+        </div>
+      {% else %}
+        <div class="post-main col-md-8 col-sm-12 col-xs-12">
+          {{ content }}
+        </div>
+      {% endif %}
     </div>
   </div>
 </div>
