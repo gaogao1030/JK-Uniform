@@ -1,5 +1,4 @@
 ---
-layout: default_post
 title: About
 ---
 
