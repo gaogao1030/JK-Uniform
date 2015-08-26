@@ -1,29 +1,99 @@
 @import "compass";
 @import "base/variables";
-.navbar-lofter {
+.navbar-lofter-md {
   @include border-radius(0);
   height:82px;
   background-color: #24292c;
   margin-bottom:30px;
+  .container {
+    height:100%;
+    .navbar-header {
+      margin-top: 20px;
+      button.navbar-toggle {
+        background-color:#fff;
+        span.icon-bar {
+          background-color: #000;
+        }
+      }
+    }
+    ul.nav.navbar-nav.navbar-right {
+      li {
+        margin-top: 15px;
+        a {
+            color: #999;
+            font-size:16px;
+            white-space: nowrap;
+            font-family: "Hiragino Sans GB","Microsoft YaHei","微软雅黑",tahoma,arial,simhei,"黑体";
+            &:hover,&:focus,&:active,&:visited {
+              background-color: #24292c;
+            }
+            &.actived {
+              color: #fff;
+            }
+        }
+      }
+    }
+  }
   .home-logo {
     color:#fff;
-    font-size:42px;
+    font-size:25px;
+    font-family: kaiti;
     .logo {
       display: inline-block;
-      margin-top: 8px;
     }
     &:hover {
       text-decoration: none;
     }
   }
 }
-@media screen and (max-width: $screen-md-max) {
-  .navbar-lofter {
-    .home-logo {
-      font-size:26px;
-      .logo {
-        margin-top:22px;
+
+
+.navbar-lofter-xs {
+  @include border-radius(0);
+  background-color: #24292c;
+  margin-bottom:30px;
+  .container {
+    height:100%;
+    .navbar-header {
+      button.navbar-toggle {
+        background-color:#fff;
+        span.icon-bar {
+          background-color: #000;
+        }
+      }
+    }
+    ul.nav.navbar-nav.navbar-right {
+      li {
+        margin-top: 15px;
+        a {
+            color: #999;
+            font-size:16px;
+            white-space: nowrap;
+            font-family: "Hiragino Sans GB","Microsoft YaHei","微软雅黑",tahoma,arial,simhei,"黑体";
+            &:hover,&:focus,&:active,&:visited {
+              background-color: #24292c;
+            }
+            &.actived {
+              color: #fff;
+            }
+        }
       }
     }
   }
+  .home-logo {
+    color:#fff;
+    font-size:16px;
+    font-family: kaiti;
+    .logo {
+      display: inline-block;
+      margin-top: 10px;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and( max-width: $screen-xs-max  ){
+  body{margin-top: 60px;}
 }
