@@ -3,7 +3,7 @@
 .portal-cover {
   .portal-cover-title {
     width: 100%;
-    max-width:434px;
+    max-width:380px;
     margin:0 auto;
     position:absolute;
     font-size: 20px;
@@ -34,7 +34,7 @@
     @include box-shadow(0 1px 3px rgba(0,0,0,.3));
     @include border-radius(12px);
     height: auto;
-    max-width: 434px;
+    max-width: 380px;
     width: 100%;
     margin: 0 auto;
     display: block;
