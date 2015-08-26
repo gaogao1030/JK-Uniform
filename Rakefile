@@ -19,24 +19,29 @@ task :fetch_qiniu do
   bucket = ENV["bucket"] || "jk-uniform"
   path = ENV['path']
   prefix = ENV['prefix'] || ""
+  p "fetching #{prefix} galley"
   host = {
     "image":"7xl9zk.com1.z0.glb.clouddn.com",
-    "jk-uniform":"7xl9ad.com1.z0.glb.clouddn.com"
+    "jk-uniform":"7xl9ad.com1.z0.glb.clouddn.com",
+    "photo": "7xj4vj.com1.z0.glb.clouddn.com"
   }
   #test = YAML::load_file('_data/qiniu/image/test.yml')
   result = Qiniu.list({:bucket=>bucket,:prefix => prefix})
   abort "fetch faild because #{bucket} isn't exist" if result[0] != 200
   items  = result[1]["items"]
-
-  data = items.map{|item| { :url => "http://" + host[bucket.to_sym]+ "/" + item["key"]  } }
+  data = items.map{|item| { :url => "http://"+host[bucket.to_sym]+"/"+item["key"]  } }
   dir_path = path.split("/")
   FileUtils::mkdir_p dir_path.slice(0,dir_path.length-1).join("/")
   File.open(path,"w"){ |f| f.write data.to_yaml.gsub(":url","url") }
+  p prefix+"fetch done"
 end
 
-desc "fetch_all_image"
-task :fetch_all_image do
-  system "rake fetch_qiniu bucket='image' path='_data/qiniu/image/test.yml'"
+desc "fetch gaogao all photos"
+task :fetch_gaogao_all_photos do
+  system "rake fetch_qiniu bucket='photo' path='_data/qiniu/photos/gaogao/2015-4-2.yml' prefix='gaogao/2015-4-2/'"
+  system "rake fetch_qiniu bucket='photo' path='_data/qiniu/photos/gaogao/2015-4-16.yml' prefix='gaogao/2015-4-16/'"
+  system "rake fetch_qiniu bucket='photo' path='_data/qiniu/photos/gaogao/ChinaJoy2015.yml' prefix='gaogao/ChinaJoy2015/'"
+  system "rake fetch_qiniu bucket='photo' path='_data/qiniu/photos/gaogao/HzComic2015.yml' prefix='gaogao/HzComic2015/'"
 end
 
 task :console do |t,args|

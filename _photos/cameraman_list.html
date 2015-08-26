@@ -6,7 +6,7 @@ not_in_list: "true"
 ---
 
 <ul class = "grid jk-cards">
-  {% for i in (1..22) %}
+
   {% for p in site.photos %}
     {%if p.not_in_list != "true" and p.page_type == "cameraman" %}
       <a href={{p.url}}>
@@ -30,7 +30,6 @@ not_in_list: "true"
          </li>
        </a>
     {%endif%}
-  {%endfor%}
   {%endfor%}
 </ul>
 

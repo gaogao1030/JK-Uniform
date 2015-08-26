@@ -1,0 +1,22 @@
+---
+layout: photos
+cover: http://7xj4vj.com1.z0.glb.clouddn.com/gaogao/ChinaJoy2015/DSC_21971.jpg-600
+title: "上海ChinaJoy2015"
+des: "全是人人人人人人人人人人！"
+author: "gaogao <span style='color:#444'>摄影</span>"
+page_type: "cameraman"
+
+
+---
+
+<ul class = "grid">
+  {% for img in site.data['qiniu']["photos"]["gaogao"]["ChinaJoy2015"] %}
+    <li class= "grid-item grid-sizer">
+      <a href="{{img["url"]}}-1200" data-lightbox="comic-photo" data-title="">
+        <img class="show-photo" src={{img["url"]}}-600></img>
+      </a>
+    </li>
+  {% endfor%}
+</ul>
+
+
