@@ -7,3 +7,4 @@ $ ->
 
   $grid_masonry.imagesLoaded().progress ->
     $grid_masonry.masonry('layout')
+
