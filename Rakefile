@@ -44,6 +44,12 @@ task :fetch_gaogao_all_photos do
   system "rake fetch_qiniu bucket='photo' path='_data/qiniu/photos/gaogao/HzComic2015.yml' prefix='gaogao/HzComic2015/'"
 end
 
+desc "fetch beyond(沈轶超) all photos"
+task :fetch_beyond_all_photos do
+  system "rake fetch_qiniu bucket='photo' path='_data/qiniu/photos/beyond/Train.yml' prefix='beyond/Train'"
+end
+
+
 task :console do |t,args|
   env = ENV['APP_ENV'] || 'development'
   puts "Loading #{env} environment"
