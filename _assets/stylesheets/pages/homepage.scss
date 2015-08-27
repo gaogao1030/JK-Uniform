@@ -48,9 +48,12 @@
 }
 
 img.avatar {
+  //width: 120px;
+  //height: 140px;
+  //@include border-radius(30px);
   width: 120px;
-  height: 140px;
-  @include border-radius(30px);
+  height: 120px;
+  @include border-radius(360px);
   @include box-shadow(rgba(0,0,0,0.8) 0 1px 1px 0);
   margin-top: 40%;
 }
@@ -73,8 +76,11 @@ img.avatar {
 }
 
 .caption {
-  margin-top: 20px;
+  margin-top: 30px;
   color: #fff;
+  p {
+    margin-bottom: 5px;
+  }
 }
 
 a.photo-gallery {
