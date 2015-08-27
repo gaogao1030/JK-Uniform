@@ -4,14 +4,12 @@
   @include border-radius(0);
   height:82px;
   background-color: #24292c;
-  margin-bottom:30px;
   .container {
     height:100%;
     .navbar-header {
       margin-top: 20px;
       button.navbar-toggle {
-        background-color:#fff;
-        span.icon-bar {
+        background-color:#fff; span.icon-bar {
           background-color: #000;
         }
       }
@@ -51,7 +49,6 @@
 .navbar-lofter-xs {
   @include border-radius(0);
   background-color: #24292c;
-  margin-bottom:30px;
   .container {
     height:100%;
     .navbar-header {
@@ -86,7 +83,7 @@
     font-family: kaiti;
     .logo {
       display: inline-block;
-      margin-top: 10px;
+      margin-top: 13px;
     }
     &:hover {
       text-decoration: none;

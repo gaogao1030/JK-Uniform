@@ -43,12 +43,25 @@ body {
   @include box-shadow(0 1px 3px rgba(0,0,0,.3));
 }
 
+a.click-able {
+  &:hover {
+    @include opacity(0.8);
+    img {
+      @include opacity(0.8);
+    }
+  }
+}
+
 .jk-card {
+  @include border-radius(6px);
   margin:0 auto;
   background-color:#fff;
   width: 95%;
   @include box-shadow(0 1px 3px rgba(0,0,0,.3));
   color: #9e7e6b;
+  img {
+    @include border-radius(6px 6px 0 0);
+  }
 }
 .jk-card-body {
   line-height: 1.35em;
@@ -63,6 +76,7 @@ body {
   }
   .grey {
     padding:8px 16px;
+    @include border-radius(0 0 6px 6px);
     .intro {
     }
     .author {

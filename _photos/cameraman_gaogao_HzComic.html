@@ -12,7 +12,7 @@ page_type: "cameraman"
 <ul class = "grid">
   {% for img in site.data['qiniu']["photos"]["gaogao"]["HzComic2015"] %}
     <li class= "grid-item grid-sizer">
-      <a href="{{img["url"]}}-1200" data-lightbox="comic-photo" data-title="">
+      <a class="click-able" href="{{img["url"]}}-1200" data-lightbox="comic-photo" data-title="">
         <img class="show-photo" src={{img["url"]}}-600></img>
       </a>
     </li>

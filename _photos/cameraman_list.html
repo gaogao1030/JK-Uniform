@@ -9,7 +9,7 @@ not_in_list: "true"
 
   {% for p in site.photos %}
     {%if p.not_in_list != "true" and p.page_type == "cameraman" %}
-      <a href={{p.url}}>
+      <a class="click-able" href={{p.url}}>
         <li class="grid-item grid-sizer">
          <div class="jk-card">
           <img class="list-photo" src={{p.cover}}></img>
