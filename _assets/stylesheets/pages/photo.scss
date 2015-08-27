@@ -50,6 +50,14 @@ a.click-able {
       @include opacity(0.8);
     }
   }
+  @media screen and( max-width: $screen-xs-max  ){
+  &:hover {
+    @include opacity(1);
+    img {
+      @include opacity(1);
+    }
+  }
+  }
 }
 
 .jk-card {
@@ -94,4 +102,60 @@ img.xiaomai {
   margin: 0 auto;
   display: block;
   @include border-radius(16px);
+}
+
+.portal-cover {
+  .portal-cover-title {
+    width: 100%;
+    max-width:380px;
+    margin:0 auto;
+    position:absolute;
+    font-size: 20px;
+    left:0;
+    right:0;
+    top:50%;
+    text-align: center;
+    font-weight:bold;
+    //z-index:1;
+  }
+  position:relative;
+  &.cameraman-cover {
+    .portal-cover-title {
+      background-color: #000;
+      @include opacity(1);
+      color: #fff;
+    }
+  }
+  &.jk-cover {
+    .portal-cover-title {
+      background-color: #fff;
+      @include opacity(0.8);
+      color: #000;
+    }
+  }
+  margin: 50px 0;
+  img {
+    @include box-shadow(0 1px 3px rgba(0,0,0,.3));
+    @include border-radius(12px);
+    height: auto;
+    max-width: 380px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+   // &:hover {
+   //   z-index:-1;
+   //   @include opacity(.8);
+   // }
+  }
+}
+
+@media screen and (max-width: $screen-md-max) {
+  .portal-cover {
+    img {
+      max-width: 360px;
+    }
+    .portal-cover-title {
+      max-width:360px;;
+    }
+  }
 }
