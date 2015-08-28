@@ -7,10 +7,11 @@ require 'qiniu.rb'
 require 'yaml.rb'
 require 'jekyll'
 require 'fileutils'
+Dir.glob('rakefile_lib/*.rake').each { |r| load r}
+
 
 local_repo = "jk.gaogao.ninja"
 remote_repo = "JK-Uniform"
-#rake server host="localhost" p="4000"
 
 task :console do |t,args|
   env = ENV['APP_ENV'] || 'development'
