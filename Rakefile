@@ -12,44 +12,6 @@ local_repo = "jk.gaogao.ninja"
 remote_repo = "JK-Uniform"
 #rake server host="localhost" p="4000"
 
-task :fetch_qiniu do
-  Dir["initializers/*"].each do |filename|
-    require "./"+filename
-  end
-  bucket = ENV["bucket"] || "jk-uniform"
-  path = ENV['path']
-  prefix = ENV['prefix'] || ""
-  p "fetching #{prefix} galley"
-  host = {
-    "image":"7xl9zk.com1.z0.glb.clouddn.com",
-    "jk-uniform":"7xl9ad.com1.z0.glb.clouddn.com",
-    "photo": "7xj4vj.com1.z0.glb.clouddn.com"
-  }
-  #test = YAML::load_file('_data/qiniu/image/test.yml')
-  result = Qiniu.list({:bucket=>bucket,:prefix => prefix})
-  abort "fetch faild because #{bucket} isn't exist" if result[0] != 200
-  items  = result[1]["items"]
-  data = items.map{|item| { :url => "http://"+host[bucket.to_sym]+"/"+item["key"]  } }
-  dir_path = path.split("/")
-  FileUtils::mkdir_p dir_path.slice(0,dir_path.length-1).join("/")
-  File.open(path,"w"){ |f| f.write data.to_yaml.gsub(":url","url") }
-  p prefix+"fetch done"
-end
-
-desc "fetch gaogao all photos"
-task :fetch_gaogao_all_photos do
-  system "rake fetch_qiniu bucket='photo' path='_data/qiniu/photos/gaogao/2015-4-2.yml' prefix='gaogao/2015-4-2/'"
-  system "rake fetch_qiniu bucket='photo' path='_data/qiniu/photos/gaogao/2015-4-16.yml' prefix='gaogao/2015-4-16/'"
-  system "rake fetch_qiniu bucket='photo' path='_data/qiniu/photos/gaogao/ChinaJoy2015.yml' prefix='gaogao/ChinaJoy2015/'"
-  system "rake fetch_qiniu bucket='photo' path='_data/qiniu/photos/gaogao/HzComic2015.yml' prefix='gaogao/HzComic2015/'"
-end
-
-desc "fetch beyond(沈轶超) all photos"
-task :fetch_beyond_all_photos do
-  system "rake fetch_qiniu bucket='photo' path='_data/qiniu/photos/beyond/Train.yml' prefix='beyond/Train'"
-end
-
-
 task :console do |t,args|
   env = ENV['APP_ENV'] || 'development'
   puts "Loading #{env} environment"
@@ -64,14 +26,10 @@ task :console do |t,args|
   Dir["_plugins/*"].each do |filename|
     require "./"+filename
   end
+  @qiniu_fetch_data = YAML::load_file('qiniu_fetch_data.yml')
   # 必须执行 ARGV.clear，不然 rake 后面的参数会被带到 IRB 里面
   ARGV.clear
   IRB.start
-end
-
-desc "call qiniu list api"
-task "qiniu_list" do
-  p "hi "
 end
 
 #Usage: rake post title="A Title" [date="2014-04-14"] desc "Create a new post"
@@ -190,3 +148,52 @@ task :deploy do
   puts "has already deployed"
 end
 
+
+task :fetch_qiniu do
+  Dir["initializers/*"].each do |filename|
+    require "./"+filename
+  end
+  bucket = ENV["bucket"] || "jk-uniform"
+  path = ENV['path']
+  prefix = ENV['prefix'] || ""
+  p "fetching <<#{prefix}>> galley"
+  host = {
+    "image":"7xl9zk.com1.z0.glb.clouddn.com",
+    "jk-uniform":"7xl9ad.com1.z0.glb.clouddn.com",
+    "photo": "7xj4vj.com1.z0.glb.clouddn.com"
+  }
+  #test = YAML::load_file('_data/qiniu/image/test.yml')
+  result = Qiniu.list({:bucket=>bucket,:prefix => prefix})
+  abort "fetch faild because #{bucket} isn't exist" if result[0] != 200
+  items  = result[1]["items"]
+  data = items.map{|item| { :url => "http://"+host[bucket.to_sym]+"/"+item["key"]  } }
+  dir_path = path.split("/")
+  FileUtils::mkdir_p dir_path.slice(0,dir_path.length-1).join("/")
+  File.open(path,"w"){ |f| f.write data.to_yaml.gsub(":url","url") }
+  p prefix+"fetch done"
+end
+
+desc "fetch member Album collection"
+task :fetch_member do
+  bucket = ENV["bucket"] || "photo"
+  name = ENV["name"] || "gaogao"
+  member_type = ENV["member_type"] || "cameraman"
+  qiniu_fetch_data = YAML::load_file('qiniu_fetch_data.yml')
+  member = qiniu_fetch_data[member_type].select{|cm| cm if cm["name"]== name }[0]
+  gallery = member["gallery"]
+  gallery.each do |g|
+    system "rake fetch_qiniu bucket='#{bucket}' path='_data/qiniu/photos/#{member_type}/#{member["name"]}/#{g}.yml' prefix='#{member["name"]}/#{g}/'"
+  end
+end
+
+desc "fetch cameraman Album"
+task :fetch_cameraman_album do
+  name = ENV["name"] || "gaogao"
+  system "rake fetch_member bucket='photo' name=#{name} member_type='cameraman'"
+end
+
+desc "fetch JK Album"
+task :fetch_jk_album do
+  name = ENV["name"] || "Virgo"
+  system "rake fetch_member bucket='photo' name=#{name} member_type='jk'"
+end

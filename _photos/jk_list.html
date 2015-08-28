@@ -6,9 +6,38 @@ not_in_list: "true"
 ---
 
 
-<h1 style="font-size:39px">
+<!--<h1 style="font-size:39px">
   <img class="xiaomai" src="http://7xl9ad.com1.z0.glb.clouddn.com/page-xiaomai.jpeg"></img>
   <p style="font-size:30px;font-weight:bold;text-align:center;">目前木有JK写真集，gaogao正在努力征集中</p>
   <p style="font-size:15px;text-align:center;">滚来滚去……~(～o￣▽￣)～o 。。。滚来滚去……o～(＿△＿o～) ~。。。</p>
 
-</h1>
+</h1>-->
+
+<ul class = "grid jk-cards">
+
+  {% for p in site.photos %}
+    {%if p.not_in_list != "true" and p.page_type == "jk" %}
+      <a class="click-able" href={{p.url}}>
+        <li class="grid-item grid-sizer">
+         <div class="jk-card">
+          <img class="list-photo" src={{p.cover}}></img>
+          <div class="jk-card-body">
+            <p class="title">
+             {{p.title}}
+            </p>
+            <div class="grey">
+              <p class="intro">
+               {{p.des}}
+              </p>
+              <p class="author">
+              {{p.author}}
+              </p>
+            </div>
+          </div>
+          </div>
+         </li>
+       </a>
+    {%endif%}
+  {%endfor%}
+</ul>
+
