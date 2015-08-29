@@ -9,3 +9,15 @@ jk:
   - name: Virgo
     realname:  CN-某些
     gallery: ["Album1"]
+
+  - name: Hayashi
+    realname: 鸡翅味白乙
+    gallery: ["Album1"]
+
+  - name: buble
+    realname: 氢气泡
+    gallery: ["Album1"]
+
+  - name: xiaowei
+    realname: 小唯
+    gallery: ["Album1"]
