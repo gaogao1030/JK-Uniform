@@ -15,8 +15,8 @@ not_in_list: "true"
 
 <ul class = "grid jk-cards">
 
-  {% for p in site.photos %}
-    {%if p.not_in_list != "true" and p.page_type == "jk" %}
+  {% for p in site.jk_gallery %}
+    {%if p.page_type == "jk" %}
       <a class="click-able" href={{p.url}}>
         <li class="grid-item grid-sizer">
          <div class="jk-card">

@@ -2,7 +2,13 @@ collections:
   demos:
     output: true
     permalink: /:collection/:path/
-  photos:
+  gallery_list:
+    output: true
+    permalink: /:collection/:path/
+  cameraman_gallery:
+    output: true
+    permalink: /:collection/:path/
+  jk_gallery:
     output: true
     permalink: /:collection/:path/
 #
@@ -46,7 +52,21 @@ defaults:
   -
     scope:
       path: ""
-      type: photos
+      type: gallery_list
+    values:
+      layout: photos
+
+  -
+    scope:
+      path: ""
+      type: jk_gallery
+    values:
+      layout: photos
+
+  -
+    scope:
+      path: ""
+      type: cameraman
     values:
       layout: photos
 
