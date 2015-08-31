@@ -1,0 +1,20 @@
+---
+layout: photos
+cover: http://7xj4vj.com1.z0.glb.clouddn.com/yangmaomao/Album1/_F0A1196.JPG-600
+title: "杨猫猫的写真"
+des: "教室中的杨猫猫"
+author: "杨猫猫 <span style='color:#444'>写真</span>"
+page_type: "jk"
+---
+
+<ul class = "grid">
+  {% for img in site.data['qiniu']["photos"]["jk"]["yangmaomao"]["Album1"] %}
+    <li class= "grid-item grid-sizer">
+      <a class="click-able" href="{{img["url"]}}-1200" data-lightbox="comic-photo" data-title="">
+        <img class="show-photo" src={{img["url"]}}-600></img>
+      </a>
+    </li>
+  {% endfor%}
+</ul>
+
+
