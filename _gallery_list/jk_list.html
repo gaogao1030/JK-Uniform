@@ -16,28 +16,26 @@ not_in_list: "true"
 <ul class = "grid jk-cards">
 
   {% for p in site.jk_gallery %}
-    {%if p.page_type == "jk" %}
-      <a class="click-able" href={{p.url}}>
-        <li class="grid-item grid-sizer">
-         <div class="jk-card">
-          <img class="list-photo" src={{p.cover}}></img>
-          <div class="jk-card-body">
-            <p class="title">
-             {{p.title}}
+    <a class="click-able" href={{p.url}}>
+      <li class="grid-item grid-sizer">
+       <div class="jk-card">
+        <img class="list-photo" src={{p.cover}}-600></img>
+        <div class="jk-card-body">
+          <p class="title">
+           {{p.title}}
+          </p>
+          <div class="grey">
+            <p class="intro">
+             {{p.des}}
             </p>
-            <div class="grey">
-              <p class="intro">
-               {{p.des}}
-              </p>
-              <p class="author">
-              {{p.author}}
-              </p>
-            </div>
+            <p class="author">
+            {{p.author}}
+            </p>
           </div>
-          </div>
-         </li>
-       </a>
-    {%endif%}
+        </div>
+        </div>
+       </li>
+    </a>
   {%endfor%}
 </ul>
 
