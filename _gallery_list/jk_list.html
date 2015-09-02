@@ -14,8 +14,8 @@ not_in_list: "true"
 </h1>-->
 
 <ul class = "grid jk-cards">
-
-  {% for p in site.jk_gallery %}
+  {% assign jk_gallery = site.jk_gallery | sort:'level' | reverse %}
+  {% for p in jk_gallery %}
     <a class="click-able" href={{p.url}}>
       <li class="grid-item grid-sizer">
        <div class="jk-card">
