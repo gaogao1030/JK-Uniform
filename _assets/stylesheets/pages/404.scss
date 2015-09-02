@@ -1,0 +1,32 @@
+@import "compass";
+@import "base/variables";
+
+.cat {
+  width:300px;
+  float: left;
+  margin-top: 240px;
+}
+
+.jk {
+  float: right;
+  margin-top: 50px;
+  width: 300px;
+  @media screen and (max-width: $screen-xs-max) {
+    float: none;
+    margin: 0 auto;
+    display: block;
+    @include opacity(0.6);
+  }
+}
+
+.text-area {
+  width: 300px;
+  text-align:center;
+  margin:auto;
+  top: 40%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index:1;
+}
+

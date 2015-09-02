@@ -1,0 +1,22 @@
+---
+layout: photos
+cover: http://7xj4vj.com1.z0.glb.clouddn.com/Virgo/Album1/20150827223804.jpg
+title: "某些的写真"
+des: "小清新风格的JK制服写真"
+author: "CN-某些 <span style='color:#444'>写真</span>"
+page_type: "jk"
+
+
+---
+
+<ul class = "grid">
+  {% for img in site.data['qiniu']["photos"]["jk"]["Virgo"]["Album1"] %}
+    <li class= "grid-item grid-sizer">
+      <a class="click-able" href="{{img["url"]}}-1200" data-lightbox="comic-photo" data-title="">
+        <img class="show-photo" src={{img["url"]}}-600></img>
+      </a>
+    </li>
+  {% endfor%}
+</ul>
+
+

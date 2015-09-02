@@ -4,7 +4,7 @@ css:
   - /stylesheets/components/sidebar.css
 ---
 {% include header.html %}
-{% if page.post_show != 'true' %}
+{% if page.hidden_home_page_cover != 'true' %}
   <div class="home-page-cover">
     <div class="group-intro">
       <img alt="avatar default" class="avatar" src="http://7xl9ad.com1.z0.glb.clouddn.com/page-avatar.jpg"></img>
@@ -24,7 +24,7 @@ css:
 <div class="content">
   <div class="container">
     <div class="row">
-      {%if page.post_show != 'true'%}
+      {% if page.hidden_home_page_cover != 'true' %}
         <div class="main col-lg-8 col-md-8 col-sm-12 col-xs-12">
           {{ content }}
         </div>
