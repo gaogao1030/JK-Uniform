@@ -1,0 +1,22 @@
+---
+layout: photos
+cover: http://7xj4vj.com1.z0.glb.clouddn.com/gaogao/2015-9-6/DSC_28141.jpg
+title: "氢气泡º-杭州图书馆(浣纱路)"
+des: "萌萌哒的气泡同学～"
+author: "gaogao <span style='color:#444'>摄影</span>"
+page_type: "cameraman"
+
+
+---
+
+<ul class = "grid">
+  {% for img in site.data['qiniu']["photos"]["cameraman"]["gaogao"]["2015-9-6"] %}
+    <li class= "grid-item grid-sizer">
+      <a class="click-able" href="{{img["url"]}}-1200" data-lightbox="comic-photo" data-title="">
+        <img class="show-photo" src={{img["url"]}}-600></img>
+      </a>
+    </li>
+  {% endfor%}
+</ul>
+
+
