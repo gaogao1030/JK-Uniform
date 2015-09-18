@@ -5,6 +5,9 @@ cameraman:
   - name: beyond
     realname: 沈轶超
     gallery: ["Train","black-white"]
+  - name: baitian
+    realname: 白天
+    gallery: ["Album1"]
 jk:
   - name: Virgo
     realname:  CN-某些
