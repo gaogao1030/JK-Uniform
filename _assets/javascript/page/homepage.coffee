@@ -10,8 +10,10 @@ $ ->
         $loading.removeClass("hidden")
         $btn_audio.addClass("hidden")
         $group_icon.addClass("loading")
+        $btn_audio.data("play","loading")
         sound = new Howl({
           urls: ["http://7xl9ad.com1.z0.glb.clouddn.com/mp3-放課後ティータイム%20-%20ふわふわ時間(映画｢けいおん!｣Mix)%20-%20remix.mp3"]
+          volume: 0.5
           onload: ->
             $btn_audio.data("play","playing")
             $group_icon.removeClass("loading")
@@ -37,4 +39,5 @@ $ ->
         $btn_audio.removeClass("glyphicon-play")
         $btn_audio.addClass("glyphicon-pause")
         sound.play()
+
 
