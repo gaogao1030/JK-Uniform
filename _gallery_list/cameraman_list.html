@@ -6,8 +6,8 @@ not_in_list: "true"
 ---
 
 <ul class = "grid jk-cards">
-
-  {% for p in site.cameraman_gallery %}
+  {% assign cameraman_gallery = site.cameraman_gallery | sort:'level' | reverse %}
+  {% for p in cameraman_gallery %}
     <a class="click-able" href={{p.url}}>
       <li class="grid-item grid-sizer">
        <div class="jk-card">

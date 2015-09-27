@@ -8,6 +8,7 @@ task :generate_all_cameraman_template do
   cameraman_data = YAML::load_file('_data/template/generate_cameraman_template.yml')
   cameraman_data["cameraman"].each do |cameraman|
     ca = cameraman
+    name = ca["name"]
     cameraman["gallery"].each do |gallery|
       ga = gallery
       author = ca["author"]
@@ -15,11 +16,12 @@ task :generate_all_cameraman_template do
       cover  = ga["cover"]
       title  = ga["title"]
       desc   = ga["desc"]
+      level  = ga["level"] || ""
       filename ="_cameraman_gallery/cameraman_#{author}_#{album}.html"
       if !File::exists?(filename) or ENV["force"] == "true"
         p "#{filename} generating"
         file = File.new(filename, "w+")
-        file.syswrite(mote("mote/cameraman_template.mote",cover: cover,title: title,desc: desc,author: author,album: album).gsub(/\+\-(.*)\-\+/,'{{\1}}'))
+        file.syswrite(mote("mote/cameraman_template.mote",cover: cover,title: title,desc: desc,author: author,album: album,name: name,level: level).gsub(/\+\-(.*)\-\+/,'{{\1}}'))
         file.close
         p "#{filename} generate done"
       else
@@ -36,17 +38,19 @@ task :generate_cameraman_template do
   cameraman_data = YAML::load_file('_data/template/generate_cameraman_template.yml')
   ca = cameraman_data["cameraman"].select{|cm| cm if cm["author"] == name }[0]
   author = ca["author"]
+  name = ca["name"]
   ca["gallery"].each do |gallery|
     ga = gallery
     album  = ga["album"]
     cover  = ga["cover"]
     title  = ga["title"]
     desc   = ga["desc"]
+    level  = ga["level"] || ""
     filename ="_cameraman_gallery/cameraman_#{author}_#{album}.html"
     if !File::exists?(filename) or ENV["force"] == "true"
       p "#{filename} generating"
       file = File.new(filename, "w+")
-      file.syswrite(mote("mote/cameraman_template.mote",cover: cover,title: title,desc: desc,author: author,album: album).gsub(/\+\-(.*)\-\+/,'{{\1}}'))
+      file.syswrite(mote("mote/cameraman_template.mote",cover: cover,title: title,desc: desc,author: author,album: album,name: name,level: level).gsub(/\+\-(.*)\-\+/,'{{\1}}'))
       file.close
       p "#{filename} generate done"
     else

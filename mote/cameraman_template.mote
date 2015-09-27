@@ -3,8 +3,11 @@ layout: photos
 cover: {{cover}}
 title: {{title}}
 desc: {{desc}}
-author: "{{author}} <span style='color:#444'>摄影</span>"
+author: "{{name}} <span style='color:#444'>摄影</span>"
 page_type: "cameraman"
+% if level != ""
+level: {{level}}
+% end
 
 ---
 <ul class = "grid" id="links">
