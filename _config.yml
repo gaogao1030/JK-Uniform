@@ -31,7 +31,7 @@ kramdown:
 timezone: '+0800'
 permalink: '/:categories/:year/:month/:day/:title'
 
-exclude: ["Rakefile",".ruby-version","Gemfile","Gemfile.lock","readme.md","initializers","qiniu.yml","bower.json","bower_components","run","gulp_config.json","gulpfile.coffee","node_modules","package.json","qiniu_fetch_data.yml","rakefile_lib"]
+exclude: ["Rakefile",".ruby-version","Gemfile","Gemfile.lock","readme.md","initializers","qiniu.yml","bower.json","bower_components","run","gulp_config.json","gulpfile.coffee","node_modules","package.json","qiniu_fetch_data.yml","rakefile_lib","mote"]
 keep_files: [".git","CNAME",".nojekyll"]
 
 paginate: 10

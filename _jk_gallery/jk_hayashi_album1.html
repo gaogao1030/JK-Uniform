@@ -1,21 +1,18 @@
 ---
 layout: photos
 cover: http://7xj4vj.com1.z0.glb.clouddn.com/Hayashi/Album1/20150828234212.jpg
-title: "鸡翅味白乙的写真"
-des: "三无少女🍒颜即正义💗fo美少女"
+title: 鸡翅味白乙的写真
+desc: 三无少女🍒颜即正义💗fo美少女
 author: "鸡翅味白乙 <span style='color:#444'>写真</span>"
 page_type: "jk"
-level: 5
----
 
-<ul class = "grid">
+---
+<ul class = "grid" id="links">
   {% for img in site.data['qiniu']["photos"]["jk"]["Hayashi"]["Album1"] %}
     <li class= "grid-item grid-sizer">
-      <a class="click-able" href="{{img["url"]}}-1200" data-lightbox="comic-photo" data-title="">
+      <a class="click-able" href={{img["url"]}}-1200 data-gallery>
         <img class="show-photo" src={{img["url"]}}-600></img>
       </a>
     </li>
-  {% endfor%}
+  {% endfor %}
 </ul>
-
-

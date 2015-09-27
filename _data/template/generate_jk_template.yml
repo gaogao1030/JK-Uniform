@@ -1,0 +1,55 @@
+jk:
+  - author: Virgo
+    realname:  CN-某些
+    gallery:
+      - album: "Album1"
+        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/Virgo/Album1/20150827223804.jpg"
+        title: "某些的写真"
+        desc: "小清新风格的JK制服写真"
+
+  - author: Hayashi
+    realname: 鸡翅味白乙
+    gallery:
+      - album: "Album1"
+        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/Hayashi/Album1/20150828234212.jpg"
+        title: "鸡翅味白乙的写真"
+        desc: "三无少女🍒颜即正义💗fo美少女"
+
+  - author: buble
+    realname: 氢气泡
+    gallery:
+      - album: "Album1"
+        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/buble/Album1/IMGP2830.jpg"
+        title: "氢气泡的写真"
+        desc: "优雅与年龄无关"
+        level: 5
+
+  - author: xiaowei
+    realname: 小唯
+    gallery:
+      - album: "Album1"
+        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/xiaowei/Album1/DSC_26471_fix.jpg"
+        title: "小唯的写真"
+        desc: "静侯灵归"
+
+  - author: Ciao
+    realname: 忘言and汉翎君
+    gallery:
+      - album: "Album1"
+        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/Ciao/Album1/DSC_25691_2_fix.jpg"
+        title: "忘言和汉翎君的写真"
+        desc: "拍摄于comic jump"
+
+  - author: yangmaomao
+    realname: 杨猫猫
+    gallery:
+      - album: "Album1"
+        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/yangmaomao/Album1/_F0A1196.JPG"
+        title: "杨猫猫的写真-水蓝色的夏天"
+        desc: "水蓝色的夏天"
+        level: 5
+
+      - album: "Album2"
+        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/yangmaomao/Album2/P8271849.jpg"
+        title: "杨猫猫的写真-夏末的教室"
+        desc: "夏末的教室－phx:吴山小法师"

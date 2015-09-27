@@ -1,0 +1,47 @@
+cameraman:
+  - author: gaogao
+    realname: 高高
+    gallery:
+      - album: "2015-4-2"
+        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/gaogao/2015-4-2/DSC_0513.JPG"
+        title: "白堤－孤山-西泠印社-孤山公园"
+        desc: "第一次外出练手拍风景"
+      - album: "2015-4-16"
+        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/gaogao/2015-4-16/DSC_0748.JPG"
+        title: "杭州南山美院"
+        desc: "天台上的景色真的超棒的 可惜拍的不好"
+      - album: "ChinaJoy2015"
+        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/gaogao/ChinaJoy2015/DSC_21971.jpg"
+        title: "上海ChinaJoy2015"
+        desc: "全是人人人人人人人人人人！"
+      - album: "HzComic2015"
+        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/gaogao/HzComic2015/DSC_11931.jpg"
+        title: "杭州动漫节2015"
+        desc: "累累累累累累（/TДT)/"
+      - album: "2015-9-6"
+        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/gaogao/2015-9-6/DSC_28141.jpg"
+        title: "氢气泡º-杭州图书馆(浣纱路)"
+        desc: "萌萌哒的气泡同学～"
+      - album: "2015-9-26"
+        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/gaogao/2015-9-26/DSC_30231.jpg"
+        title: "吴山与夜晚的西湖"
+        desc: "吴山战斗系jk踩点"
+  - author: beyond
+    realname: 沈轶超
+    gallery:
+      - album: "Train"
+        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/beyond/Train/IMG_2400.JPG"
+        title: "那年，她坐上火车一去不复返"
+        desc: "2015.8.1摄于杭州江墅铁路公园"
+      - album: "black-white"
+        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/beyond/black-white/FullSizeRender.jpg"
+        title: "黑白"
+        desc: "黑白Style"
+
+  - author: baitian
+    realname: 白天
+    gallery:
+      - album: "Album1"
+        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/baitian/Album1/DSC_8341.jpg"
+        title: "摄影作品集"
+        desc: "白天的摄影作品集"

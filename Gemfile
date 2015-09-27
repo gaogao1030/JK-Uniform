@@ -8,6 +8,7 @@ gem 'compass'
 gem 'yui-compressor'
 gem 'closure-compiler'
 gem 'qiniu'
+gem 'mote'
 
 group :jekyll_plugins do
   gem 'kramdown'

@@ -1,21 +1,18 @@
 ---
 layout: photos
 cover: http://7xj4vj.com1.z0.glb.clouddn.com/baitian/Album1/DSC_8341.jpg
-title: "摄影作品集"
-des: "白天的摄影作品集 "
-author: "白天 <span style='color:#444'>摄影</span>"
+title: 摄影作品集
+desc: 白天的摄影作品集
+author: "baitian <span style='color:#444'>摄影</span>"
 page_type: "cameraman"
 
 ---
-
-<ul class = "grid">
+<ul class = "grid" id="links">
   {% for img in site.data['qiniu']["photos"]["cameraman"]["baitian"]["Album1"] %}
     <li class= "grid-item grid-sizer">
-      <a class="click-able" href="{{img["url"]}}-1200" data-lightbox="comic-photo" data-title="">
+      <a class="click-able" href={{img["url"]}}-1200 data-gallery>
         <img class="show-photo" src={{img["url"]}}-600></img>
       </a>
     </li>
-  {% endfor%}
+  {% endfor %}
 </ul>
-
-
