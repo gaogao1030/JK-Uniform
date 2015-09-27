@@ -55,3 +55,12 @@ cameraman:
         title: "摄影作品集"
         desc: "白天的摄影作品集"
         level: 4
+  - author: yunyingboxin
+    realname: 云影波心
+    name: 云影波心
+    gallery:
+      - album: "chinajoy2015"
+        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/yunyingboxin/chinajoy2015/IMG_8218.jpg"
+        title: "ChinaJoy2015"
+        desc: "云影波心拍摄于上海ChinaJoy2015"
+        level: 4

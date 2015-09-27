@@ -1,0 +1,19 @@
+---
+layout: photos
+cover: http://7xj4vj.com1.z0.glb.clouddn.com/yunyingboxin/chinajoy2015/IMG_8218.jpg
+title: ChinaJoy2015
+desc: 云影波心拍摄于上海ChinaJoy2015
+author: "云影波心 <span style='color:#444'>摄影</span>"
+page_type: "cameraman"
+level: 4
+
+---
+<ul class = "grid" id="links">
+  {% for img in site.data['qiniu']["photos"]["cameraman"]["yunyingboxin"]["chinajoy2015"] %}
+    <li class= "grid-item grid-sizer">
+      <a class="click-able" href={{img["url"]}}-1200 data-gallery>
+        <img class="show-photo" src={{img["url"]}}-600></img>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

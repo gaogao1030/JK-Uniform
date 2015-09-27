@@ -8,6 +8,9 @@ cameraman:
   - name: baitian
     realname: 白天
     gallery: ["Album1"]
+  - name: yunyingboxin
+    realname: 云影波心
+    gallery: ["chinajoy2015"]
 jk:
   - name: Virgo
     realname:  CN-某些
