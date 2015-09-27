@@ -22,3 +22,37 @@
 * 进入目录后输入./run 运行
 
 * 使用gulp dev 进入开发模式
+
+** 配置 **
+
+* qiniu.yml 用来配置qiniu的key,secet,bucket
+
+* qiniu_feth_data.yml 用来配置从七牛上抓取相册的数据
+
+* _data/template下的模版数据是用来配置生成模版用的数据
+
+* 有新的相册要添加的话请先上传到七牛然后配置上面这2个文件
+
+** 七牛抓取相册 **
+
+* rake fetch_all_cameraman_album
+
+* rake fetch_all_jk_album
+
+* rake fetch_cameraman_album name="name"
+
+* rake fetch_jk_album name="name"
+
+* name为抓取当前改摄影师或jk下的所有相册
+
+** 生成模版 **
+
+* rake generate_jk_template name="name" force="true"
+
+* rake generate_cameraman_template name="name" force="true"
+
+* rake generate_all_cameraman_template force="true"
+
+* rake generate_all_jk_template force="true"
+
+* name是jk或摄影师的名字 force为true的话 会强制生成模版 不管当前的模版是否存在 否则会跳过已经存在的模版 生成新的模版
