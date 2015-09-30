@@ -35,3 +35,7 @@ jk:
   - name: yangmaomao
     realname: 杨猫猫
     gallery: ["Album1","Album2"]
+
+  - name: cc
+    realname: cc不是鲁鲁修的cc
+    gallery: ["Album1"]

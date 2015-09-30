@@ -53,3 +53,11 @@ jk:
         cover: "http://7xj4vj.com1.z0.glb.clouddn.com/yangmaomao/Album2/P8271849.jpg"
         title: "杨猫猫的写真-夏末的教室"
         desc: "夏末的教室－phx:吴山小法师"
+
+  - author: cc
+    realname: cc不是鲁鲁修的cc
+    gallery:
+      - album: "Album1"
+        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/cc/Album1/20150930144312.jpg"
+        title: "cc不是鲁鲁修的cc的写真"
+        desc: "校园的日常－phx:白天"
