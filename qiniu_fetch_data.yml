@@ -39,3 +39,7 @@ jk:
   - name: cc
     realname: cc不是鲁鲁修的cc
     gallery: ["Album1"]
+
+  - name: momo
+    realname: もも
+    gallery: ["Album1"]
