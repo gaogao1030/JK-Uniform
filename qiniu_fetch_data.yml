@@ -42,4 +42,5 @@ jk:
 
   - name: momo
     realname: もも
-    gallery: ["Album1"]
+    gallery: ["Album1","Album2"]
+
