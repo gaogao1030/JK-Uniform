@@ -44,3 +44,7 @@ jk:
     realname: もも
     gallery: ["Album1","Album2"]
 
+  - name: Party
+    realname: party
+    gallery: ["Album1"]
+

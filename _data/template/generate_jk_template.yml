@@ -77,3 +77,12 @@ jk:
         title: "もも的写真"
         desc: "南山美院 - phx:gaogao"
         level: 5
+
+  - author: Party
+    realname: JK们的聚会
+    gallery:
+      - album: "Album1"
+        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/Party/Album1/DSC_34381.jpg"
+        title: "10月6号杭州JK们的聚会"
+        desc: "摄于猫咪咖啡厅"
+        level: 4
