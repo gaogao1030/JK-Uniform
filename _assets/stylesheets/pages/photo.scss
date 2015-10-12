@@ -20,6 +20,19 @@ body {
   width: 300px;
   float: left;
   margin: 7px 0;
+  &.is-loading {
+    a.click-able {
+      position: relative;
+      margin:0 auto;
+      display: block;
+      width: 95%;
+      background-color: #000;
+      padding-bottom: 152%;
+      img {
+        display: none;
+      }
+    }
+  }
   &.grid-sizer {
     width: 25%;
   }
