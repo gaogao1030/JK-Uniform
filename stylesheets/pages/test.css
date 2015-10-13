@@ -1,0 +1,53 @@
+.footer {
+  border-top: 1px solid #e5e5e5;
+  padding: 20px 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .home {
+    text-align: center;
+  }
+}
+.home-logo img {
+  width: 42px;
+  height: 42px;
+  margin-top: 3px;
+}
+
+.page-heading {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.post {
+  margin-bottom: 30px;
+}
+
+.post-header {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.post-meta {
+  margin-bottom: 0;
+}
+
+.post-title {
+  font-size: 28px;
+  margin-top: 0;
+}
+
+.post-main {
+  margin: 50px auto;
+}
+.post-main.col-md-8 {
+  float: none;
+}
+.post-main img {
+  margin: 0 auto;
+  max-width: 100%;
+  display: block;
+}
