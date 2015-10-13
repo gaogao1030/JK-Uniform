@@ -41,10 +41,10 @@
     <loc>//cameraman_gallery/cameraman_baitian_Album1/</loc>
   </url>
   <url>
-    <loc>//cameraman_gallery/cameraman_beyond_black-white/</loc>
+    <loc>//cameraman_gallery/cameraman_beyond_Train/</loc>
   </url>
   <url>
-    <loc>//cameraman_gallery/cameraman_beyond_train/</loc>
+    <loc>//cameraman_gallery/cameraman_beyond_black-white/</loc>
   </url>
   <url>
     <loc>//cameraman_gallery/cameraman_gaogao_2015-4-16/</loc>
@@ -68,16 +68,19 @@
     <loc>//cameraman_gallery/cameraman_yunyingboxin_chinajoy2015/</loc>
   </url>
   <url>
-    <loc>//jk_gallery/jk_Ciao_album1/</loc>
+    <loc>//jk_gallery/jk_Ciao_Album1/</loc>
+  </url>
+  <url>
+    <loc>//jk_gallery/jk_Hayashi_Album1/</loc>
   </url>
   <url>
     <loc>//jk_gallery/jk_Party_Album1/</loc>
   </url>
   <url>
-    <loc>//jk_gallery/jk_buble_album1/</loc>
+    <loc>//jk_gallery/jk_Virgo_Album1/</loc>
   </url>
   <url>
-    <loc>//jk_gallery/jk_hayashi_album1/</loc>
+    <loc>//jk_gallery/jk_buble_Album1/</loc>
   </url>
   <url>
     <loc>//jk_gallery/jk_momo_Album1/</loc>
@@ -86,15 +89,12 @@
     <loc>//jk_gallery/jk_momo_Album2/</loc>
   </url>
   <url>
-    <loc>//jk_gallery/jk_virgo_album1/</loc>
+    <loc>//jk_gallery/jk_xiaowei_Album1/</loc>
   </url>
   <url>
-    <loc>//jk_gallery/jk_xiaowei_album1/</loc>
+    <loc>//jk_gallery/jk_yangmaomao_Album1/</loc>
   </url>
   <url>
-    <loc>//jk_gallery/jk_yangmaomao_album1/</loc>
-  </url>
-  <url>
-    <loc>//jk_gallery/jk_yangmaomao_album2/</loc>
+    <loc>//jk_gallery/jk_yangmaomao_Album2/</loc>
   </url>
 </urlset>
