@@ -10,7 +10,8 @@ level: 5
 ---
 <ul class = "grid" id="links">
   {% for img in site.data['qiniu']["photos"]["jk"]["buble"]["Album1"] %}
-    <li class= "grid-item grid-sizer">
+    <li class= "grid-item grid-sizer is-loading">
+      <div class="loading"></div>
       <a class="click-able" href={{img["url"]}}-1200 data-gallery>
         <img class="show-photo" src={{img["url"]}}-600></img>
       </a>
