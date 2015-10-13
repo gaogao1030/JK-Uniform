@@ -46,6 +46,7 @@ body {
           padding-bottom: 80%;
         }
       }
+      .image-area {display:none;}
       img {display:none;}
     }
 
@@ -85,13 +86,28 @@ body {
   @include box-shadow(0 1px 3px rgba(0,0,0,.3));
 }
 
-a.click-able {
-  &:hover {
-    @include opacity(0.8);
+.jk-cards {
+  a.click-able {
+    &:hover {
+      img {
+        @include scale(1.1);
+      }
+    }
     img {
-      @include opacity(0.8);
+      @include transition-duration(0.3s);
+      @include scale(1.0);
     }
   }
+}
+
+a.click-able {
+  &:hover {
+    @include opacity(0.9);
+    img {
+      @include opacity(0.9);
+    }
+  }
+
   @media screen and( max-width: $screen-xs-max  ){
   &:hover {
     @include opacity(1);
@@ -110,6 +126,12 @@ a.click-able {
   @include box-shadow(0 1px 3px rgba(0,0,0,.3));
   color: #9e7e6b;
   img {
+    @include border-radius(6px 6px 0 0);
+  }
+  .image-area {
+    padding-bottom: 150%;
+    height: 0;
+    overflow: hidden;
     @include border-radius(6px 6px 0 0);
   }
 }
