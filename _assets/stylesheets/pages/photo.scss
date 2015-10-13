@@ -1,6 +1,7 @@
 @import "compass";
 @import "compass/reset";
 @import "base/variables";
+@import "base/mixin";
 
 dy, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
@@ -20,6 +21,46 @@ body {
   width: 300px;
   float: left;
   margin: 7px 0;
+  .loading {display:none;}
+  &.is-loading {
+    a.click-able {
+      position: relative;
+      margin:0 auto;
+      display: block;
+      width: 95%;
+      background-color: #000;
+      padding-bottom: 152%;
+      @include border-radius(6px);
+      img {
+        display: none;
+      }
+    }
+
+    .jk-card {
+      .fill-color {
+        position:relative;
+        background-color: #000;
+        padding-bottom: 150%;
+        @include border-radius(6px 6px 0 0);
+        &.cameraman {
+          padding-bottom: 80%;
+        }
+      }
+      img {display:none;}
+    }
+
+    .loading {
+      display: block;
+      z-index: 1;
+      @include absolute-center();
+      background-image: url("http://7xlbvq.com1.z0.glb.clouddn.com/assets/image/loading.gif");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 24px;
+      height: 24px;
+    }
+  }
   &.grid-sizer {
     width: 25%;
   }
@@ -40,6 +81,7 @@ body {
   margin:0 auto;
   width: 95%;
   display: block;
+  @include border-radius(6px);
   @include box-shadow(0 1px 3px rgba(0,0,0,.3));
 }
 

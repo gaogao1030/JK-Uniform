@@ -9,8 +9,11 @@ not_in_list: "true"
   {% assign cameraman_gallery = site.cameraman_gallery | sort:'level' | reverse %}
   {% for p in cameraman_gallery %}
     <a class="click-able" href={{p.url}}>
-      <li class="grid-item grid-sizer">
+      <li class="grid-item grid-sizer is-loading">
        <div class="jk-card">
+         <div class="fill-color cameraman">
+           <div class="loading"></div>
+         </div>
         <img class="list-photo" src={{p.cover}}-600></img>
         <div class="jk-card-body">
           <p class="title">
