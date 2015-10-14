@@ -64,3 +64,13 @@ cameraman:
         title: "ChinaJoy2015"
         desc: "云影波心拍摄于上海ChinaJoy2015"
         level: 4
+
+  - author: xiaowei
+    realname: 小唯
+    name: 小唯(妹摄兼JK)
+    gallery:
+      - album: "Cameraman_Album1"
+        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/xiaowei/Cameraman_Album1/20151014163722.jpg"
+        title: "风景作品集"
+        desc: "小唯的摄影练习^-^"
+        level: 5

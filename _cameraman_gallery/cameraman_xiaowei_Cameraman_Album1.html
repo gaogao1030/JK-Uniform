@@ -1,0 +1,20 @@
+---
+layout: photos
+cover: http://7xj4vj.com1.z0.glb.clouddn.com/xiaowei/Cameraman_Album1/20151014163722.jpg
+title: 风景作品集
+desc: 小唯的摄影练习^-^
+author: "小唯(妹摄兼JK) <span style='color:#444'>摄影</span>"
+page_type: "cameraman"
+level: 5
+
+---
+<ul class = "grid" id="links">
+  {% for img in site.data['qiniu']["photos"]["cameraman"]["xiaowei"]["Cameraman_Album1"] %}
+    <li class= "grid-item grid-sizer is-loading">
+      <div class="loading"></div>
+      <a class="click-able" href={{img["url"]}}-1200 data-gallery>
+        <img class="show-photo" src={{img["url"]}}-600></img>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
