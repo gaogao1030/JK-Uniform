@@ -5,23 +5,34 @@
   z-index:1;
   position: relative;
   margin-bottom: 20px;
-  height:490px;
+  height:520px;
   background-color: #000;
   @include box-shadow(rgba(0,0,0,.5) 0 2px 1px 0,rgba(0,0,0,0.5) 0 1px 0 0);
-  &:after {
-    background-image: url("http://7xl9ad.com1.z0.glb.clouddn.com/page-classroom.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    @include opacity(0.6);
+  ul.carousel {
+    position:absolute;
     width:100%;
     height:100%;
-    position:absolute;
-    z-index: -1;
-    content: "";
-    top:0;
-    left:0;
-    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    li {
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width:100%;
+      height:100%;
+      position:absolute;
+      z-index: -1;
+      content: "";
+      top:0;
+      left:0;
+      margin-bottom: 20px;
+      @include opacity(0);
+      @include transition-duration(3s);
+      @include transition-property(opacity);
+      &.active {
+        @include opacity(0.8);
+      }
+    }
   }
 }
 
@@ -30,28 +41,12 @@
   z-index:1;
   position: relative;
   margin-bottom: 20px;
-  height:460px;
-  .home-page-cover {
-    @include box-shadow(rgba(0,0,0,.5) 0 2px 1px 0,rgba(0,0,0,0.5) 0 1px 0 0);
-    background-image: url("http://7xl9ad.com1.z0.glb.clouddn.com/page-classroom.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width:100%;
-    height:100%;
-    position:absolute;
-    z-index: -1;
-    content: "";
-    top:0;
-    left:0;
-    margin-bottom: 20px;
-  }
 }
 
 .group-icon  {
   position: relative;
   display: inline-block;
-  margin: 35% auto 0 auto;
+  margin: 42% auto 0 auto;
   cursor: pointer;
   &.loading {
     .cover {
