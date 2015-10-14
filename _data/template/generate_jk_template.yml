@@ -86,3 +86,12 @@ jk:
         title: "10月6号杭州JK们的聚会"
         desc: "摄于猫咪咖啡厅"
         level: 4
+
+  - author: honeypinker
+    realname: 兔哒
+    gallery:
+      - album: "Album1"
+        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/honeypinker/Album1/2015-10-04-5.jpg"
+        title: "一切都是崭新的开始"
+        desc: "出境:聋君 - phx:vivienneluo"
+        level: 4
