@@ -42,9 +42,6 @@ body {
         background-color: #000;
         padding-bottom: 150%;
         @include border-radius(6px 6px 0 0);
-        &.cameraman {
-          padding-bottom: 80%;
-        }
       }
       .image-area {display:none;}
       img {display:none;}
