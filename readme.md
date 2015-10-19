@@ -19,9 +19,7 @@
 
 * 安装额外插件请用npm install *** --save-dev 将插件保存到package.json
 
-* 进入目录后输入./run 运行
-
-* 使用gulp dev 进入开发模式
+* 使用gulp dev 进入开发模式(得益于browser-sync 不需再使用jekyll server了)
 
 **配置**
 
