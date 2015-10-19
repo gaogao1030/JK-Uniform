@@ -23,7 +23,7 @@
 
 * 使用gulp dev 进入开发模式
 
-** 配置 **
+**配置**
 
 * qiniu.yml 用来配置qiniu的key,secet,bucket
 
@@ -33,7 +33,7 @@
 
 * 有新的相册要添加的话请先上传到七牛然后配置上面这2个文件
 
-** 七牛抓取相册 **
+**七牛抓取相册**
 
 * rake fetch_all_cameraman_album
 
@@ -45,7 +45,7 @@
 
 * name为抓取当前改摄影师或jk下的所有相册
 
-** 生成模版 **
+**生成模版**
 
 * rake generate_jk_template name="name" force="true"
 
