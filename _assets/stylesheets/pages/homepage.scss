@@ -1,5 +1,6 @@
 @import "compass/css3";
 @import "base/variables";
+body { background-color: #fdfcee; }
 .home-page-cover {
   width: 100%;
   z-index:1;
@@ -134,7 +135,7 @@
 }
 
 a.photo-gallery {
-  color: #b5fdff;
+  color: #fff;
   //position: absolute;
   //right: 5px;
   //top: 10px;

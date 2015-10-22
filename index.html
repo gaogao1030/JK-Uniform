@@ -6,13 +6,13 @@ js:
 ---
 
 <div class="home">
-  <h1 class="page-heading">最新文章</h1>
+  <h1 class="page-heading font-bold">最新文章</h1>
 
   <ul class="post-list">
     {% for post in paginator.posts %}
       <li>
         <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a class="post-link type1" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
         <span class="post-meta">{{ post.date | date: "%Y年%-m月%-d日" }}{{ post.categories | category_links }}</span>
         <div class="post-content">
