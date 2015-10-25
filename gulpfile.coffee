@@ -74,18 +74,22 @@ gulp.task 'uncompressed', ->
 
 gulp.task 'watch',->
   watch(coffee_source).on 'change', (path)->
+    js_dest = path.split("/").slice(0,-1).join("/").replace("_assets/","")
     dest = path.split("/").slice(0,-1).join("/").replace("_assets/","_site/")
     gulp.src(path)
     .pipe(coffee({bare: true}).on('error', (err)->
       console.log "#{err.name}:\"#{err.message}\" in #{err.filename}:#{err.location.first_line}"
     ))
     .pipe(gulp.dest(dest))
+    .pipe(gulp.dest(js_dest))
     .pipe(browserSync.reload({stream:true}))
     console.log path + ' was changed'
   watch(js_source).on 'change', (path)->
+    js_dest = path.split("/").slice(0,-1).join("/").replace("_assets/","")
     dest = path.split("/").slice(0,-1).join("/").replace("_assets/","_site/")
     gulp.src(path)
     .pipe(gulp.dest(dest))
+    .pipe(gulp.dest(js_dest))
     .pipe(browserSync.reload({stream:true}))
     console.log path + ' was changed'
   watch(scss_source).on 'change',(path) ->
@@ -99,6 +103,7 @@ gulp.task 'watch',->
         console.log err.message
         this.emit('end')
       )
+      .pipe(gulp.dest(css_dest))
       .pipe(browserSync.reload({stream:true}))
       console.log path + ' was changed'
   gulp.watch(['*.html', '*.md','_jk_gallery/*.html', '_gallery_list/*.html','_cameraman_galery/*.html','_includes/*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild'])
