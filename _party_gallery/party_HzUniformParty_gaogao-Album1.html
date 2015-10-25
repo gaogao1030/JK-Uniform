@@ -1,0 +1,20 @@
+---
+layout: photos
+cover: http://7xj4vj.com1.z0.glb.clouddn.com/HzUniformParty/gaogao-Album1/DSC_39771.jpg
+title:  杭州JK班服聚会
+desc: 拍摄于吴山广场和西湖银泰
+author: "高高 <span style='color:#444'>拍摄</span>"
+page_type: "party"
+level: 2
+
+---
+<ul class = "grid" id="links">
+  {% for img in site.data['qiniu']["photos"]["party"]["HzUniformParty"]["gaogao-Album1"] %}
+    <li class= "grid-item grid-sizer is-loading">
+      <div class="loading"></div>
+      <a class="click-able" href={{img["url"]}}-1200 data-gallery>
+        <img class="show-photo" src={{img["url"]}}-600></img>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

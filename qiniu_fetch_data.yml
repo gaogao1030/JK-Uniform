@@ -56,3 +56,6 @@ party:
   - name: Party
     realname: 猫咪咖啡厅聚会
     gallery: ["Album1"]
+  - name: HzUniformParty
+    realname: 杭州班服聚会
+    gallery: ["gaogao-Album1"]
