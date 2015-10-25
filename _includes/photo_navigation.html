@@ -6,8 +6,12 @@
           <a class="home-logo" href="/gallery/cameraman">
             <div class=logo>{{page.title}}</div>
           </a>
-        {% else %}
+        {% elsif page.page_type == "jk" %}
           <a class="home-logo" href="/gallery/jk">
+            <div class=logo>{{page.title}}</div>
+          </a>
+        {% elsif page.page_type == "party" %}
+          <a class="home-logo" href="/gallery/party">
             <div class=logo>{{page.title}}</div>
           </a>
         {% endif %}
@@ -28,8 +32,10 @@
           {%if page.not_in_list != "true" %}
             {% if page.page_type == "cameraman" %}
               <li><a href="/gallery/cameraman">返回</a></li>
-            {% else %}
+            {% elsif page.page_type == "jk" %}
               <li><a href="/gallery/jk">返回</a></li>
+            {% elsif page.page_type == "party" %}
+              <li><a href="/gallery/party">返回</a></li>
             {% endif %}
           {% else %}
             <li><a href="/gallery">返回</a></li>
@@ -55,8 +61,12 @@
           <a class="home-logo" href="/gallery/cameraman">
             <div class=logo>{{page.title}}</div>
           </a>
-        {% else %}
+        {% elsif page.page_type == "jk" %}
           <a class="home-logo" href="/gallery/jk">
+            <div class=logo>{{page.title}}</div>
+          </a>
+        {% elsif page.page_type == "party" %}
+          <a class="home-logo" href="/gallery/party">
             <div class=logo>{{page.title}}</div>
           </a>
         {% endif %}
@@ -77,8 +87,10 @@
           {%if page.not_in_list != "true" %}
             {% if page.page_type == "cameraman" %}
               <li><a href="/gallery/cameraman">返回</a></li>
-            {% else %}
+            {% elsif page.page_type == "jk" %}
               <li><a href="/gallery/jk">返回</a></li>
+            {% elsif page.page_type == "party" %}
+              <li><a href="/gallery/party">返回</a></li>
             {% endif %}
           {% else %}
             <li><a href="/gallery">返回</a></li>

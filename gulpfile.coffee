@@ -106,7 +106,7 @@ gulp.task 'watch',->
       .pipe(gulp.dest(css_dest))
       .pipe(browserSync.reload({stream:true}))
       console.log path + ' was changed'
-  gulp.watch(['*.html', '*.md','_jk_gallery/*.html', '_gallery_list/*.html','_cameraman_galery/*.html','_includes/*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild'])
+  gulp.watch(['*.html', '*.md','_jk_gallery/*.html', '_gallery_list/*.html','_cameraman_galery/*.html','_party_gallery/*.html','_includes/*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild'])
 
 gulp.task 'dev',['browser-sync','watch']
 
