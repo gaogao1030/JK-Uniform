@@ -188,14 +188,3 @@ task :fetch_member do
   end
 end
 
-desc "fetch cameraman Album"
-task :fetch_cameraman_album do
-  name = ENV["name"] || "gaogao"
-  system "rake fetch_member bucket='photo' name=#{name} member_type='cameraman'"
-end
-
-desc "fetch JK Album"
-task :fetch_jk_album do
-  name = ENV["name"] || "Virgo"
-  system "rake fetch_member bucket='photo' name=#{name} member_type='jk'"
-end

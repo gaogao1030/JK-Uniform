@@ -48,10 +48,11 @@ jk:
     realname: もも
     gallery: ["Album1","Album2"]
 
-  - name: Party
-    realname: party
-    gallery: ["Album1"]
-
   - name: honeypinker
     realname: 兔哒
+    gallery: ["Album1"]
+
+party:
+  - name: Party
+    realname: 猫咪咖啡厅聚会
     gallery: ["Album1"]

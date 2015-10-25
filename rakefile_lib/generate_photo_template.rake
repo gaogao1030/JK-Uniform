@@ -115,3 +115,60 @@ task :generate_jk_template do
     end
   end
 end
+
+desc "generate all party template"
+task :generate_all_party_template do
+  force = ENV["force"] || false
+  name = ENV["name"] || "Party"
+  party_data = YAML::load_file('_data/template/generate_party_template.yml')
+  party_data["party"].each do |party|
+    author = party["author"]
+    name = party["realname"]
+    party["gallery"].each do |gallery|
+      ga = gallery
+      album  = ga["album"]
+      cover  = ga["cover"]
+      title  = ga["title"]
+      desc   = ga["desc"]
+      level  = ga["level"] || ""
+      filename ="_party_gallery/party_#{author}_#{album}.html"
+      if !File::exists?(filename) or ENV["force"] == "true"
+        p "#{filename} generating"
+        file = File.new(filename, "w+")
+        file.syswrite(mote("mote/party_template.mote",cover: cover,title: title,desc: desc,author: author,album: album,level: level,name: name).gsub(/\+\-(.*)\-\+/,'{{\1}}'))
+        file.close
+        p "#{filename} generate done"
+      else
+        p "#{filename} has exist"
+      end
+    end
+  end
+end
+
+desc "generate party template"
+task :generate_party_template do
+  force = ENV["force"] || false
+  name = ENV["name"] || "Party"
+  party_data = YAML::load_file('_data/template/generate_party_template.yml')
+  party = party_data["party"].select{|cm| cm if cm["author"] == name }[0]
+  author = party["author"]
+  name = party["realname"]
+  party["gallery"].each do |gallery|
+    ga = gallery
+    album  = ga["album"]
+    cover  = ga["cover"]
+    title  = ga["title"]
+    desc   = ga["desc"]
+    level  = ga["level"] || ""
+    filename ="_party_gallery/party_#{author}_#{album}.html"
+    if !File::exists?(filename) or ENV["force"] == "true"
+      p "#{filename} generating"
+      file = File.new(filename, "w+")
+      file.syswrite(mote("mote/party_template.mote",cover: cover,title: title,desc: desc,author: author,album: album,level: level,name: name).gsub(/\+\-(.*)\-\+/,'{{\1}}'))
+      file.close
+      p "#{filename} generate done"
+    else
+      p "#{filename} has exist"
+    end
+  end
+end

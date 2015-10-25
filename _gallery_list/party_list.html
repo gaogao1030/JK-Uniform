@@ -1,0 +1,38 @@
+---
+layout: photos
+permalink: /gallery/party/
+title: 私たちのパーティー
+not_in_list: "true"
+---
+
+<ul class = "grid jk-cards">
+  {% assign party_gallery = site.party_gallery | sort:'level' | reverse %}
+  {% for p in party_gallery %}
+    <a class="click-able" href={{p.url}}>
+      <li class="grid-item grid-sizer is-loading">
+       <div class="jk-card">
+         <div class="fill-color">
+           <div class="loading"></div>
+         </div>
+        <div class="image-area">
+          <img class="list-photo" src={{p.cover}}-600x900></img>
+        </div>
+        <div class="jk-card-body">
+          <p class="title">
+           {{p.title}}
+          </p>
+          <div class="grey">
+            <p class="intro">
+             {{p.desc}}
+            </p>
+            <p class="author">
+            {{p.author}}
+            </p>
+          </div>
+        </div>
+        </div>
+       </li>
+    </a>
+  {%endfor%}
+</ul>
+

@@ -1,0 +1,10 @@
+party:
+  - author: Party
+    realname: 高高
+    gallery:
+      - album: "Album1"
+        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/Party/Album1/DSC_34381.jpg"
+        title: "10月6号杭州JK们的聚会"
+        desc: "猫咪咖啡厅聚会 phx:高高"
+        level: 1
+

@@ -11,6 +11,9 @@ collections:
   jk_gallery:
     output: true
     permalink: /:collection/:path/
+  party_gallery:
+    output: true
+    permalink: /:collection/:path/
 #
 # Site settings
 title: JKたちの日常
