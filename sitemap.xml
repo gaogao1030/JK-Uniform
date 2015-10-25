@@ -39,6 +39,9 @@
     <loc>//gallery/jk/</loc>
   </url>
   <url>
+    <loc>//gallery/party/</loc>
+  </url>
+  <url>
     <loc>//gallery/</loc>
   </url>
   <url>
@@ -93,9 +96,6 @@
     <loc>//jk_gallery/jk_Hayashi_Album1/</loc>
   </url>
   <url>
-    <loc>//jk_gallery/jk_Party_Album1/</loc>
-  </url>
-  <url>
     <loc>//jk_gallery/jk_Virgo_Album1/</loc>
   </url>
   <url>
@@ -118,5 +118,11 @@
   </url>
   <url>
     <loc>//jk_gallery/jk_yangmaomao_Album2/</loc>
+  </url>
+  <url>
+    <loc>//party_gallery/party_HzUniformParty_gaogao-Album1/</loc>
+  </url>
+  <url>
+    <loc>//party_gallery/party_Party_Album1/</loc>
   </url>
 </urlset>
