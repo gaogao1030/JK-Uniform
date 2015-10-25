@@ -1,20 +1,17 @@
+{% if page.page_type == "jk"%}
+  {% assign back_url = "/gallery/jk"%}
+{% elsif page.page_type == "party"%}
+  {% assign back_url = "/gallery/party"%}
+{% elsif page.page_type == "cameraman"%}
+  {% assign back_url = "/gallery/cameraman"%}
+{% endif %}
 <nav class="navbar navbar-lofter-md hidden-xs" role="navigation">
   <div class="container">
     <div class="navbar-header">
       {% if page.not_in_list != "true" %}
-        {% if page.page_type == "cameraman" %}
-          <a class="home-logo" href="/gallery/cameraman">
+          <a class="home-logo" href="{{back_url}}">
             <div class=logo>{{page.title}}</div>
           </a>
-        {% elsif page.page_type == "jk" %}
-          <a class="home-logo" href="/gallery/jk">
-            <div class=logo>{{page.title}}</div>
-          </a>
-        {% elsif page.page_type == "party" %}
-          <a class="home-logo" href="/gallery/party">
-            <div class=logo>{{page.title}}</div>
-          </a>
-        {% endif %}
       {% else %}
         <a class="home-logo" href="{{ site.baseurl }}/gallery">
           <div class=logo>{{page.title}}</div>
@@ -30,13 +27,7 @@
           <li><a href="/">首页</a></li>
           <li><a href="/gallery">写真馆</a></li>
           {%if page.not_in_list != "true" %}
-            {% if page.page_type == "cameraman" %}
-              <li><a href="/gallery/cameraman">返回</a></li>
-            {% elsif page.page_type == "jk" %}
-              <li><a href="/gallery/jk">返回</a></li>
-            {% elsif page.page_type == "party" %}
-              <li><a href="/gallery/party">返回</a></li>
-            {% endif %}
+            <li><a href="{{back_url}}">返回</a></li>
           {% else %}
             <li><a href="/gallery">返回</a></li>
           {% endif %}
@@ -57,19 +48,9 @@
         <span class="icon-bar"></span>
       </button>
       {% if page.not_in_list != "true" %}
-        {% if page.page_type == "cameraman" %}
-          <a class="home-logo" href="/gallery/cameraman">
+          <a class="home-logo" href="{{back_url}}">
             <div class=logo>{{page.title}}</div>
           </a>
-        {% elsif page.page_type == "jk" %}
-          <a class="home-logo" href="/gallery/jk">
-            <div class=logo>{{page.title}}</div>
-          </a>
-        {% elsif page.page_type == "party" %}
-          <a class="home-logo" href="/gallery/party">
-            <div class=logo>{{page.title}}</div>
-          </a>
-        {% endif %}
       {% else %}
         <a class="home-logo" href="{{ site.baseurl }}/gallery">
           <div class=logo>{{page.title}}</div>
@@ -85,13 +66,7 @@
           <li><a href="/">首页</a></li>
           <li><a href="/gallery">写真馆</a></li>
           {%if page.not_in_list != "true" %}
-            {% if page.page_type == "cameraman" %}
-              <li><a href="/gallery/cameraman">返回</a></li>
-            {% elsif page.page_type == "jk" %}
-              <li><a href="/gallery/jk">返回</a></li>
-            {% elsif page.page_type == "party" %}
-              <li><a href="/gallery/party">返回</a></li>
-            {% endif %}
+            <li><a href="{{back_url}}">返回</a></li>
           {% else %}
             <li><a href="/gallery">返回</a></li>
           {% endif %}
