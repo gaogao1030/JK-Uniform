@@ -11,8 +11,10 @@ require 'mote.rb'
 Dir.glob('rakefile_lib/*.rake').each { |r| load r}
 
 
+deploy_site = "git@git.coding.net:gaogao"
 local_repo = "jk.gaogao.ninja"
 remote_repo = "JK-Uniform"
+pages_branch = "coding-pages"
 
 task :console do |t,args|
   env = ENV['APP_ENV'] || 'development'
@@ -93,10 +95,11 @@ task :draft do
  end
 end
 
-desc "fetch repo from github"
+desc "fetch repo from deploy site"
 task :fetch_repo do
   repo = ENV["repo"]
-  url= "git@github.com:gaogao1030/#{repo}"
+  #url= "git@github.com:gaogao1030/#{repo}"
+  url= "#{deploy_site}/#{repo}"
   unless FileTest.directory?("../#{local_repo}")
     puts "clone #{url}.git from github"
     cd '../' do
@@ -106,7 +109,7 @@ task :fetch_repo do
     cd "../#{local_repo}/" do
       puts "update #{url}"
       system "git reset --hard HEAD"
-      system "git pull origin gh-pages"
+      system "git pull origin #{pages_branch}"
     end
   end
 end
@@ -119,10 +122,10 @@ task :build do
   system "bundle exec jekyll build -d #{dest} --config _config.yml,_production.yml"
 end
 
-desc "checkout gh-pages"
+desc "checkout pages branch"
 task :checkout do
   cd "../#{local_repo}/" do
-    system "git checkout gh-pages"
+    system "git checkout #{pages_branch}"
   end
 end
 
@@ -131,11 +134,11 @@ task :push do
   cd "../#{local_repo}/" do
     puts "add .nojekyll"
     system "touch .nojekyll"
-    puts "Pushing to `gh-pages' branch:"
+    puts "Pushing to `#{pages_branch}' branch:"
     system "git add -A"
     system "git commit -m 'update at #{Time.now.utc}'"
-    system "git push origin gh-pages"
-    puts "`gh-pages' branch updated."
+    system "git push origin #{pages_branch}"
+    puts "`#{pages_branch}' branch updated."
   end
 end
 
