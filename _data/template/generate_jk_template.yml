@@ -1,4 +1,23 @@
 jk:
+  - author: Muxi
+    realname: 沐汐
+    gallery:
+      - album: "Album1"
+        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/Muxi/Album1/6.jpg"
+        title: "沐汐的写真-走廊中的少女"
+        desc: "phx&后期:u2宝宝"
+        level: 6
+      - album: "Album2"
+        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/Muxi/Album2/IMG_1886.jpg"
+        title: "沐汐的写真-纸飞机"
+        desc: "phx&后期:月半"
+        level: 6
+      - album: "Album3"
+        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/Muxi/Album3/IMGL7329.jpg"
+        title: "沐汐的写真-天台小恶魔"
+        desc: "phx&后期:宫木 后勤:离奈&江岛"
+        level: 6
+
   - author: Virgo
     realname:  CN-某些
     gallery:

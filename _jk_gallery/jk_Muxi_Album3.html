@@ -1,0 +1,20 @@
+---
+layout: photos
+cover: http://7xj4vj.com1.z0.glb.clouddn.com/Muxi/Album3/IMGL7329.jpg
+title: 沐汐的写真-天台小恶魔
+desc: phx&后期:宫木 后勤:离奈&江岛
+author: "沐汐 <span style='color:#444'>写真</span>"
+page_type: "jk"
+level: 6
+
+---
+<ul class = "grid" id="links">
+  {% for img in site.data['qiniu']["photos"]["jk"]["Muxi"]["Album3"] %}
+    <li class= "grid-item grid-sizer is-loading">
+      <div class="loading"></div>
+      <a class="click-able" href={{img["url"]}}-1200 data-gallery>
+        <img class="show-photo" src={{img["url"]}}-600></img>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

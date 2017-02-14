@@ -1,0 +1,20 @@
+---
+layout: photos
+cover: http://7xj4vj.com1.z0.glb.clouddn.com/Muxi/Album1/6.jpg
+title: 沐汐的写真-走廊中的少女
+desc: phx&后期:u2宝宝
+author: "沐汐 <span style='color:#444'>写真</span>"
+page_type: "jk"
+level: 6
+
+---
+<ul class = "grid" id="links">
+  {% for img in site.data['qiniu']["photos"]["jk"]["Muxi"]["Album1"] %}
+    <li class= "grid-item grid-sizer is-loading">
+      <div class="loading"></div>
+      <a class="click-able" href={{img["url"]}}-1200 data-gallery>
+        <img class="show-photo" src={{img["url"]}}-600></img>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

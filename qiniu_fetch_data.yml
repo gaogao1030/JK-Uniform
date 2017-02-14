@@ -16,6 +16,10 @@ cameraman:
     gallery: ["Cameraman_Album1"]
 
 jk:
+  - name: Muxi
+    realname: 沐汐
+    gallery: ["Album1","Album2","Album3"]
+
   - name: Virgo
     realname:  CN-某些
     gallery: ["Album1"]
