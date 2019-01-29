@@ -1,7 +1,7 @@
-source "https://ruby.taobao.org"
+source "https://gems.ruby-china.com"
 gem 'jekyll', '2.5.3'
 gem 'jekyll-slim'
-gem 'slim', github: 'slim-template/slim'
+gem 'slim'
 gem 'coffee-script'
 gem 'sass'
 gem 'compass'
@@ -21,5 +21,6 @@ group :jekyll_plugins do
   gem 'httparty'
   gem 'jekyll-coffeescript'
   gem 'jekyll-asset-pipeline'
+
 end
 

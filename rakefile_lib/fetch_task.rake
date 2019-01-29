@@ -7,9 +7,9 @@ task :fetch_qiniu do
   prefix = ENV['prefix'] || ""
   p "fetching <<#{prefix}>> galley"
   host = {
-    "image":"photo.photo.jk.gaoyh.me",
-    "jk-uniform":"photo.photo.jk.gaoyh.me",
-    "photo": "photo.photo.jk.gaoyh.me"
+    "image":"photo.jk.gaoyh.me",
+    "jk-uniform":"photo.jk.gaoyh.me",
+    "photo": "photo.jk.gaoyh.me"
   }
   #test = YAML::load_file('_data/qiniu/image/test.yml')
   result = Qiniu.list({:bucket=>bucket,:prefix => prefix})
@@ -75,4 +75,11 @@ task :fetch_all_party_album do
   parties.each do |party|
     system "rake fetch_party_album name=#{party['name']}"
   end
+end
+
+desc "fetch all album"
+task :fetch_all_album do
+  system "rake fetch_all_cameraman_album"
+  system "rake fetch_all_jk_album"
+  system "rake fetch_all_party_album"
 end

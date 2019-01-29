@@ -19,13 +19,11 @@
 
 * gem install compass
 
-* 安装额外插件请用npm install *** --save-dev 将插件保存到package.json
-
 * 使用gulp dev 进入开发模式(得益于browser-sync 不需再使用jekyll server了)
 
 ## 依赖
 
-* ruby 2.2.1p85
+* ruby 2.3.0
 
 * node 5.2.0
 
@@ -37,7 +35,7 @@
 
 * qiniu_feth_data.yml 用来配置从七牛上抓取相册的数据
 
-* _data/template下的模版数据是用来配置生成模版用的数据
+* \_data/template下的模版数据是用来配置生成模版用的数据
 
 * 有新的相册要添加的话请先上传到七牛然后配置上面这2个文件
 
@@ -51,6 +49,8 @@
 
 * rake fetch_jk_album name="name"
 
+* rake fetch_all_album
+
 * name为抓取当前改摄影师或jk下的所有相册
 
 ## 生成模版脚本指令
@@ -62,5 +62,7 @@
 * rake generate_all_cameraman_template force="true"
 
 * rake generate_all_jk_template force="true"
+
+* rake generate_all_template force="true"
 
 * name是jk或摄影师的名字 force为true的话 会强制生成模版 不管当前的模版是否存在 否则会跳过已经存在的模版 生成新的模版

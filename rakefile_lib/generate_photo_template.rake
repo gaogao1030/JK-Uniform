@@ -172,3 +172,11 @@ task :generate_party_template do
     end
   end
 end
+
+desc "generate all template"
+task :generate_all_template do
+  force = ENV["force"] || false
+  system "rake generate_all_cameraman_template force=#{force}"
+  system "rake generate_all_jk_template force=#{force}"
+  system "rake generate_all_party_template force=#{force}"
+end
