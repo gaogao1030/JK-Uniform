@@ -3,17 +3,17 @@ jk:
     realname: 沐汐
     gallery:
       - album: "Album1"
-        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/Muxi/Album1/6.jpg"
+        cover: "http://photo.jk.gaoyh.me/Muxi/Album1/6.jpg"
         title: "沐汐的写真-走廊中的少女"
         desc: "phx&后期:u2宝宝"
         level: 6
       - album: "Album2"
-        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/Muxi/Album2/IMG_1886.jpg"
+        cover: "http://photo.jk.gaoyh.me/Muxi/Album2/IMG_1886.jpg"
         title: "沐汐的写真-纸飞机"
         desc: "phx&后期:月半"
         level: 6
       - album: "Album3"
-        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/Muxi/Album3/IMGL7329.jpg"
+        cover: "http://photo.jk.gaoyh.me/Muxi/Album3/IMGL7329.jpg"
         title: "沐汐的写真-天台小恶魔"
         desc: "phx&后期:宫木 后勤:离奈&江岛"
         level: 6
@@ -22,7 +22,7 @@ jk:
     realname:  CN-某些
     gallery:
       - album: "Album1"
-        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/Virgo/Album1/20150827223804.jpg"
+        cover: "http://photo.jk.gaoyh.me/Virgo/Album1/20150827223804.jpg"
         title: "某些的写真"
         desc: "小清新风格的JK制服写真"
 
@@ -30,7 +30,7 @@ jk:
     realname: 鸡翅味白乙
     gallery:
       - album: "Album1"
-        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/Hayashi/Album1/20150828234212.jpg"
+        cover: "http://photo.jk.gaoyh.me/Hayashi/Album1/20150828234212.jpg"
         title: "鸡翅味白乙的写真"
         desc: "三无少女🍒颜即正义💗fo美少女"
 
@@ -38,7 +38,7 @@ jk:
     realname: 氢气泡
     gallery:
       - album: "Album1"
-        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/buble/Album1/IMGP2830.jpg"
+        cover: "http://photo.jk.gaoyh.me/buble/Album1/IMGP2830.jpg"
         title: "氢气泡的写真"
         desc: "优雅与年龄无关"
         level: 5
@@ -47,7 +47,7 @@ jk:
     realname: 小唯
     gallery:
       - album: "Album1"
-        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/xiaowei/Album1/DSC_26471_fix.jpg"
+        cover: "http://photo.jk.gaoyh.me/xiaowei/Album1/DSC_26471_fix.jpg"
         title: "小唯的写真"
         desc: "静侯灵归"
         level: 5
@@ -56,7 +56,7 @@ jk:
     realname: 忘言and汉翎君
     gallery:
       - album: "Album1"
-        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/Ciao/Album1/DSC_25691_2_fix.jpg"
+        cover: "http://photo.jk.gaoyh.me/Ciao/Album1/DSC_25691_2_fix.jpg"
         title: "忘言和汉翎君的写真"
         desc: "拍摄于comic jump"
 
@@ -64,13 +64,13 @@ jk:
     realname: 杨猫猫
     gallery:
       - album: "Album1"
-        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/yangmaomao/Album1/_F0A1196.JPG"
+        cover: "http://photo.jk.gaoyh.me/yangmaomao/Album1/_F0A1196.JPG"
         title: "杨猫猫的写真-水蓝色的夏天"
         desc: "水蓝色的夏天"
         level: 5
 
       - album: "Album2"
-        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/yangmaomao/Album2/P8271849.jpg"
+        cover: "http://photo.jk.gaoyh.me/yangmaomao/Album2/P8271849.jpg"
         title: "杨猫猫的写真-夏末的教室"
         desc: "夏末的教室 - phx:吴山小法师"
 
@@ -78,7 +78,7 @@ jk:
   #  realname: cc不是鲁鲁修的cc
   #  gallery:
   #    - album: "Album1"
-  #      cover: "http://7xj4vj.com1.z0.glb.clouddn.com/cc/Album1/20150930144312.jpg"
+  #      cover: "http://photo.jk.gaoyh.me/cc/Album1/20150930144312.jpg"
   #      title: "cc不是鲁鲁修的cc的写真"
   #      desc: "校园的日常 - phx:白天"
 
@@ -86,13 +86,13 @@ jk:
     realname: もも
     gallery:
       - album: "Album1"
-        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/momo/Album1/DSC_32071.jpg"
+        cover: "http://photo.jk.gaoyh.me/momo/Album1/DSC_32071.jpg"
         title: "もも的写真"
         desc: "DreamTower - phx:gaogao"
         level: 5
 
       - album: "Album2"
-        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/momo/Album2/DSC_32941.jpg"
+        cover: "http://photo.jk.gaoyh.me/momo/Album2/DSC_32941.jpg"
         title: "もも的写真"
         desc: "南山美院 - phx:gaogao"
         level: 5
@@ -101,7 +101,7 @@ jk:
     realname: 兔哒
     gallery:
       - album: "Album1"
-        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/honeypinker/Album1/2015-10-04-5.jpg"
+        cover: "http://photo.jk.gaoyh.me/honeypinker/Album1/2015-10-04-5.jpg"
         title: "一切都是崭新的开始"
         desc: "出境:聋君 - phx:vivienneluo"
         level: 4

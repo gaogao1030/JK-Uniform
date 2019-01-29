@@ -3,7 +3,7 @@ party:
     realname: 高高
     gallery:
       - album: "Album1"
-        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/Party/Album1/DSC_34381.jpg"
+        cover: "http://photo.jk.gaoyh.me/Party/Album1/DSC_34381.jpg"
         title: "猫咪咖啡厅聚会"
         desc: "拍摄于猫咪咖啡厅"
         level: 1
@@ -12,7 +12,7 @@ party:
     realname: 高高
     gallery:
       - album: "gaogao-Album1"
-        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/HzUniformParty/gaogao-Album1/DSC_39771.jpg"
+        cover: "http://photo.jk.gaoyh.me/HzUniformParty/gaogao-Album1/DSC_39771.jpg"
         title: " 杭州JK班服聚会"
         desc: "拍摄于吴山广场和西湖银泰"
         level: 2

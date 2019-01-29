@@ -4,41 +4,41 @@ cameraman:
     name: 高高
     gallery:
       - album: "2015-4-2"
-        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/gaogao/2015-4-2/DSC_0513.JPG"
+        cover: "http://photo.jk.gaoyh.me/gaogao/2015-4-2/DSC_0513.JPG"
         title: "白堤－孤山-西泠-孤山公园"
         desc: "第一次外出练手拍风景"
         level: 3
       - album: "2015-4-16"
-        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/gaogao/2015-4-16/DSC_0748.JPG"
+        cover: "http://photo.jk.gaoyh.me/gaogao/2015-4-16/DSC_0748.JPG"
         title: "杭州南山美院"
         desc: "拍摄于杭州南山美院"
         level: 3
       - album: "ChinaJoy2015"
-        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/gaogao/ChinaJoy2015/DSC_21971.jpg"
+        cover: "http://photo.jk.gaoyh.me/gaogao/ChinaJoy2015/DSC_21971.jpg"
         title: "上海ChinaJoy2015"
         desc: "全是人人人人人人人人人人！"
       - album: "HzComic2015"
-        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/gaogao/HzComic2015/DSC_11931.jpg"
+        cover: "http://photo.jk.gaoyh.me/gaogao/HzComic2015/DSC_11931.jpg"
         title: "杭州动漫节2015"
         desc: "累累累累累累（/TДT)/"
         level: 3
       - album: "2015-9-6"
-        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/gaogao/2015-9-6/DSC_28141.jpg"
+        cover: "http://photo.jk.gaoyh.me/gaogao/2015-9-6/DSC_28141.jpg"
         title: "氢气泡º-杭州图书馆(浣纱路)"
         desc: "气泡同学的图书馆写真"
         level: 4
       - album: "2015-10-17-Part1"
-        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/gaogao/2015-10-17-Part1/DSC_35921.jpg"
+        cover: "http://photo.jk.gaoyh.me/gaogao/2015-10-17-Part1/DSC_35921.jpg"
         title: "赵公堤系列(盖叫天故居)"
         desc: "盖叫天故居"
         level: 5
       - album: "2015-10-17-Part2"
-        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/gaogao/2015-10-17-Part2/DSC_38121.jpg"
+        cover: "http://photo.jk.gaoyh.me/gaogao/2015-10-17-Part2/DSC_38121.jpg"
         title: "赵公堤系列(金沙曲苑)"
         desc: "金沙曲苑"
         level: 5
       - album: "2015-9-26"
-        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/gaogao/2015-9-26/DSC_30231.jpg"
+        cover: "http://photo.jk.gaoyh.me/gaogao/2015-9-26/DSC_30231.jpg"
         title: "吴山与夜晚的西湖"
         desc: "吴山战斗系jk踩点"
         level: 4
@@ -47,12 +47,12 @@ cameraman:
     name: 猫勺
     gallery:
       - album: "Train"
-        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/beyond/Train/IMG_2400.JPG"
+        cover: "http://photo.jk.gaoyh.me/beyond/Train/IMG_2400.JPG"
         title: "那年，她坐上火车一去不复返"
         desc: "2015.8.1摄于杭州江墅铁路公园"
         level: 4
       - album: "black-white"
-        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/beyond/black-white/FullSizeRender.jpg"
+        cover: "http://photo.jk.gaoyh.me/beyond/black-white/FullSizeRender.jpg"
         title: "黑白"
         desc: "黑白Style"
 
@@ -61,7 +61,7 @@ cameraman:
     name: 白天
     gallery:
       - album: "Album1"
-        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/baitian/Album1/DSC_8418.jpg"
+        cover: "http://photo.jk.gaoyh.me/baitian/Album1/DSC_8418.jpg"
         title: "摄影作品集"
         desc: "白天的摄影作品集"
         level: 4
@@ -70,17 +70,17 @@ cameraman:
     name: 云影波心
     gallery:
       - album: "chinajoy2015"
-        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/yunyingboxin/chinajoy2015/IMG_8218.jpg"
+        cover: "http://photo.jk.gaoyh.me/yunyingboxin/chinajoy2015/IMG_8218.jpg"
         title: "ChinaJoy2015"
         desc: "云影波心拍摄于上海ChinaJoy2015"
         level: 4
       - album: "Album1"
-        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/yunyingboxin/Album1/IMG_7368.jpg"
+        cover: "http://photo.jk.gaoyh.me/yunyingboxin/Album1/IMG_7368.jpg"
         title: "云影波心的人像集"
         desc: "云影波心拍摄"
         level: 4
       - album: "Album2"
-        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/yunyingboxin/Album2/pink-dream.jpg"
+        cover: "http://photo.jk.gaoyh.me/yunyingboxin/Album2/pink-dream.jpg"
         title: "云影波心的杂物集"
         desc: "云影波心拍摄"
         level: 4
@@ -89,7 +89,7 @@ cameraman:
     name: 小唯(妹摄兼JK)
     gallery:
       - album: "Cameraman_Album1"
-        cover: "http://7xj4vj.com1.z0.glb.clouddn.com/xiaowei/Cameraman_Album1/20151014163722.jpg"
+        cover: "http://photo.jk.gaoyh.me/xiaowei/Cameraman_Album1/20151014163722.jpg"
         title: "风景作品集"
         desc: "小唯的摄影练习^-^"
         level: 6

@@ -7,9 +7,9 @@ task :fetch_qiniu do
   prefix = ENV['prefix'] || ""
   p "fetching <<#{prefix}>> galley"
   host = {
-    "image":"7xl9zk.com1.z0.glb.clouddn.com",
-    "jk-uniform":"7xl9ad.com1.z0.glb.clouddn.com",
-    "photo": "7xj4vj.com1.z0.glb.clouddn.com"
+    "image":"photo.photo.jk.gaoyh.me",
+    "jk-uniform":"photo.photo.jk.gaoyh.me",
+    "photo": "photo.photo.jk.gaoyh.me"
   }
   #test = YAML::load_file('_data/qiniu/image/test.yml')
   result = Qiniu.list({:bucket=>bucket,:prefix => prefix})

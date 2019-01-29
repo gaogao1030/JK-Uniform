@@ -1,5 +1,6 @@
 #Readme
-**该仓库的作用是为了避开github page 对jekyll插件的审核,其作用是让直接生成的静态页面显示**
+
+## 该仓库的作用是为了避开github page 对jekyll插件的审核,其作用是让直接生成的静态页面显示 
 
 * rake post(生成新的文章)
 
@@ -8,7 +9,8 @@
 * rake deploy(部署github page上的个人网站)
 
 
-**GetStarted**
+## GetStarted
+
 * npm install
 
 * bundle install
@@ -21,7 +23,15 @@
 
 * 使用gulp dev 进入开发模式(得益于browser-sync 不需再使用jekyll server了)
 
-**配置**
+## 依赖
+
+* ruby 2.2.1p85
+
+* node 5.2.0
+
+* npm v3.5.3
+
+## 配置
 
 * qiniu.yml 用来配置qiniu的key,secet,bucket
 
@@ -31,7 +41,7 @@
 
 * 有新的相册要添加的话请先上传到七牛然后配置上面这2个文件
 
-**七牛抓取相册**
+## 七牛抓取相册脚本指令
 
 * rake fetch_all_cameraman_album
 
@@ -43,7 +53,7 @@
 
 * name为抓取当前改摄影师或jk下的所有相册
 
-**生成模版**
+## 生成模版脚本指令
 
 * rake generate_jk_template name="name" force="true"
 
