@@ -14,7 +14,7 @@ $ ->
           $group_icon.addClass("loading")
           $btn_audio.data("play","loading")
           sound = new Howl({
-            urls: ["http://jk.gaoyh.me/mp3-放課後ティータイム%20-%20ふわふわ时间(%2312『軽音!』Mix)%20-%20remix.mp3"]
+            urls: ["http://assets.jk.gaoyh.me/mp3-放課後ティータイム%20-%20ふわふわ时间(%2312『軽音!』Mix)%20-%20remix.mp3"]
             volume: 0.5
             onload: ->
               $btn_audio.data("play","playing")
