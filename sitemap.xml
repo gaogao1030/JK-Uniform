@@ -1,132 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>//jk/hz/2015/10/27/new-post</loc>
-    <lastmod>2015-10-27T00:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>//emotional/2015/10/22/new-post</loc>
-    <lastmod>2015-10-22T00:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>//jk/2015/08/23/new-post2</loc>
-    <lastmod>2015-08-23T00:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>//jk/photograph/2015/08/23/new-post1</loc>
-    <lastmod>2015-08-23T00:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>//jk/2015/08/22/new-post</loc>
-    <lastmod>2015-08-22T00:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>//jk/2015/08/21/new-post</loc>
-    <lastmod>2015-08-21T00:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>//404.html</loc>
-  </url>
-  <url>
-    <loc>//about.html</loc>
-  </url>
-  <url>
-    <loc>//</loc>
-  </url>
-  <url>
-    <loc>//teaparty/</loc>
-  </url>
-  <url>
-    <loc>//gallery/cameraman/</loc>
-  </url>
-  <url>
-    <loc>//gallery/jk/</loc>
-  </url>
-  <url>
-    <loc>//gallery/party/</loc>
-  </url>
-  <url>
-    <loc>//gallery/</loc>
-  </url>
-  <url>
-    <loc>//cameraman_gallery/cameraman_baitian_Album1/</loc>
-  </url>
-  <url>
-    <loc>//cameraman_gallery/cameraman_beyond_Train/</loc>
-  </url>
-  <url>
-    <loc>//cameraman_gallery/cameraman_beyond_black-white/</loc>
-  </url>
-  <url>
-    <loc>//cameraman_gallery/cameraman_gaogao_2015-10-17-Part1/</loc>
-  </url>
-  <url>
-    <loc>//cameraman_gallery/cameraman_gaogao_2015-10-17-Part2/</loc>
-  </url>
-  <url>
-    <loc>//cameraman_gallery/cameraman_gaogao_2015-4-16/</loc>
-  </url>
-  <url>
-    <loc>//cameraman_gallery/cameraman_gaogao_2015-4-2/</loc>
-  </url>
-  <url>
-    <loc>//cameraman_gallery/cameraman_gaogao_2015-9-26/</loc>
-  </url>
-  <url>
-    <loc>//cameraman_gallery/cameraman_gaogao_2015-9-6/</loc>
-  </url>
-  <url>
-    <loc>//cameraman_gallery/cameraman_gaogao_ChinaJoy2015/</loc>
-  </url>
-  <url>
-    <loc>//cameraman_gallery/cameraman_gaogao_HzComic2015/</loc>
-  </url>
-  <url>
-    <loc>//cameraman_gallery/cameraman_xiaowei_Cameraman_Album1/</loc>
-  </url>
-  <url>
-    <loc>//cameraman_gallery/cameraman_yunyingboxin_Album1/</loc>
-  </url>
-  <url>
-    <loc>//cameraman_gallery/cameraman_yunyingboxin_Album2/</loc>
-  </url>
-  <url>
-    <loc>//cameraman_gallery/cameraman_yunyingboxin_chinajoy2015/</loc>
-  </url>
-  <url>
-    <loc>//jk_gallery/jk_Ciao_Album1/</loc>
-  </url>
-  <url>
-    <loc>//jk_gallery/jk_Hayashi_Album1/</loc>
-  </url>
-  <url>
-    <loc>//jk_gallery/jk_Virgo_Album1/</loc>
-  </url>
-  <url>
-    <loc>//jk_gallery/jk_buble_Album1/</loc>
-  </url>
-  <url>
-    <loc>//jk_gallery/jk_honeypinker_Album1/</loc>
-  </url>
-  <url>
-    <loc>//jk_gallery/jk_momo_Album1/</loc>
-  </url>
-  <url>
-    <loc>//jk_gallery/jk_momo_Album2/</loc>
-  </url>
-  <url>
-    <loc>//jk_gallery/jk_xiaowei_Album1/</loc>
-  </url>
-  <url>
-    <loc>//jk_gallery/jk_yangmaomao_Album1/</loc>
-  </url>
-  <url>
-    <loc>//jk_gallery/jk_yangmaomao_Album2/</loc>
-  </url>
-  <url>
-    <loc>//party_gallery/party_HzUniformParty_gaogao-Album1/</loc>
-  </url>
-  <url>
-    <loc>//party_gallery/party_Party_Album1/</loc>
-  </url>
+<url>
+<loc>//emotional/2015/10/22/new-post</loc>
+<lastmod>2015-10-22T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>//jk/2015/08/23/new-post2</loc>
+<lastmod>2015-08-23T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>//jk/photograph/2015/08/23/new-post1</loc>
+<lastmod>2015-08-23T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>//jk/2015/08/22/new-post</loc>
+<lastmod>2015-08-22T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>//jk/2015/08/21/new-post</loc>
+<lastmod>2015-08-21T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>//404.html</loc>
+</url>
+<url>
+<loc>//about.html</loc>
+</url>
+<url>
+<loc>//</loc>
+</url>
+<url>
+<loc>//category/jk/</loc>
+</url>
+<url>
+<loc>//category/photograph/</loc>
+</url>
+<url>
+<loc>//category/emotional/</loc>
+</url>
+<url>
+<loc>//2015/</loc>
+</url>
+<url>
+<loc>//2015/10/</loc>
+</url>
+<url>
+<loc>//2015/10/22/</loc>
+</url>
+<url>
+<loc>//2015/08/</loc>
+</url>
+<url>
+<loc>//2015/08/23/</loc>
+</url>
+<url>
+<loc>//2015/08/22/</loc>
+</url>
+<url>
+<loc>//2015/08/21/</loc>
+</url>
+<url>
+<loc>//teaparty/</loc>
+</url>
+<url>
+<loc>//gallery/cameraman/</loc>
+</url>
+<url>
+<loc>//gallery/jk/</loc>
+</url>
+<url>
+<loc>//gallery/party/</loc>
+</url>
+<url>
+<loc>//gallery/</loc>
+</url>
+<url>
+<loc>//cameraman%5Fgallery/cameraman_baitian_Album1/</loc>
+</url>
+<url>
+<loc>//cameraman%5Fgallery/cameraman_beyond_Train/</loc>
+</url>
+<url>
+<loc>//cameraman%5Fgallery/cameraman_beyond_black-white/</loc>
+</url>
+<url>
+<loc>//cameraman%5Fgallery/cameraman_gaogao_2015-10-17-Part1/</loc>
+</url>
+<url>
+<loc>//cameraman%5Fgallery/cameraman_gaogao_2015-10-17-Part2/</loc>
+</url>
+<url>
+<loc>//cameraman%5Fgallery/cameraman_gaogao_2015-4-16/</loc>
+</url>
+<url>
+<loc>//cameraman%5Fgallery/cameraman_gaogao_2015-4-2/</loc>
+</url>
+<url>
+<loc>//cameraman%5Fgallery/cameraman_gaogao_2015-9-26/</loc>
+</url>
+<url>
+<loc>//cameraman%5Fgallery/cameraman_gaogao_2015-9-6/</loc>
+</url>
+<url>
+<loc>//cameraman%5Fgallery/cameraman_gaogao_ChinaJoy2015/</loc>
+</url>
+<url>
+<loc>//cameraman%5Fgallery/cameraman_gaogao_HzComic2015/</loc>
+</url>
+<url>
+<loc>//cameraman%5Fgallery/cameraman_xiaowei_Cameraman_Album1/</loc>
+</url>
+<url>
+<loc>//cameraman%5Fgallery/cameraman_yunyingboxin_Album1/</loc>
+</url>
+<url>
+<loc>//cameraman%5Fgallery/cameraman_yunyingboxin_Album2/</loc>
+</url>
+<url>
+<loc>//cameraman%5Fgallery/cameraman_yunyingboxin_chinajoy2015/</loc>
+</url>
+<url>
+<loc>//jk%5Fgallery/jk_Ciao_Album1/</loc>
+</url>
+<url>
+<loc>//jk%5Fgallery/jk_Hayashi_Album1/</loc>
+</url>
+<url>
+<loc>//jk%5Fgallery/jk_Muxi_Album1/</loc>
+</url>
+<url>
+<loc>//jk%5Fgallery/jk_Muxi_Album2/</loc>
+</url>
+<url>
+<loc>//jk%5Fgallery/jk_Muxi_Album3/</loc>
+</url>
+<url>
+<loc>//jk%5Fgallery/jk_Virgo_Album1/</loc>
+</url>
+<url>
+<loc>//jk%5Fgallery/jk_buble_Album1/</loc>
+</url>
+<url>
+<loc>//jk%5Fgallery/jk_honeypinker_Album1/</loc>
+</url>
+<url>
+<loc>//jk%5Fgallery/jk_momo_Album1/</loc>
+</url>
+<url>
+<loc>//jk%5Fgallery/jk_momo_Album2/</loc>
+</url>
+<url>
+<loc>//jk%5Fgallery/jk_xiaowei_Album1/</loc>
+</url>
+<url>
+<loc>//jk%5Fgallery/jk_yangmaomao_Album1/</loc>
+</url>
+<url>
+<loc>//jk%5Fgallery/jk_yangmaomao_Album2/</loc>
+</url>
+<url>
+<loc>//party%5Fgallery/party_HzUniformParty_gaogao-Album1/</loc>
+</url>
+<url>
+<loc>//party%5Fgallery/party_Party_Album1/</loc>
+</url>
 </urlset>
