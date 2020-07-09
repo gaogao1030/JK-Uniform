@@ -1,4 +1,6 @@
-source "https://gems.ruby-china.com"
+#source "https://gems.ruby-china.com"
+source "https://rubygems.org"
+
 gem 'jekyll', '2.5.3'
 gem 'jekyll-slim'
 gem 'slim'
@@ -9,6 +11,7 @@ gem 'yui-compressor'
 gem 'closure-compiler'
 gem 'qiniu'
 gem 'mote'
+gem 'rake'
 
 group :jekyll_plugins do
   gem 'kramdown'
@@ -21,6 +24,4 @@ group :jekyll_plugins do
   gem 'httparty'
   gem 'jekyll-coffeescript'
   gem 'jekyll-asset-pipeline'
-
 end
-

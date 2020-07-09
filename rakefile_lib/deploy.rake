@@ -1,7 +1,7 @@
-deploy_site = "git@git.coding.net:gaogao"
+deploy_site = "git@github.com:gaogao1030"
 local_repo = "jk.gaogao.ninja"
 remote_repo = "JK-Uniform"
-pages_branch = "coding-pages"
+pages_branch = "gh-pages"
 
 desc "fetch repo from deploy site"
 task :fetch_repo do
