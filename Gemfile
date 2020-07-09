@@ -1,7 +1,7 @@
 #source "https://gems.ruby-china.com"
 source "https://rubygems.org"
 
-gem 'jekyll', '2.5.3'
+gem 'jekyll', '3.8.7'
 gem 'jekyll-slim'
 gem 'slim'
 gem 'coffee-script'
